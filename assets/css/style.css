@@ -81,14 +81,14 @@ footer {
 
 /* ----------------------------------- Grid*/
 
-.square {
+.grid-logo .col-4 {
     border: 3px solid white;
     border-radius: 10px;
     height: 30px;
 }
 
 @media screen and (min-width: 768px) {
-    .square  {
+    .grid-logo .col-4  {
         height: 50px;
     }
 }
