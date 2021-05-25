@@ -93,10 +93,8 @@ footer {
     }
 }
 
-
 .grid-logo {
     width: 35%;
-    height: 20%;
     margin-top: 8rem;
 }
 
@@ -113,8 +111,6 @@ footer {
         margin-top: 13rem;
     }
 }
-
-
 
 /* ----------------------------------- Button play and instruction in home page*/
 
@@ -146,15 +142,42 @@ footer {
         width: 40%;
     }
 }
+
 /* ----------------------------------- All button*/
 
-#button-home-page button:hover,
-#button-home-page button:active,
-#button-home-page button:focus,
-#button-home-page button:active:focus {
+button:hover,
+button:active,
+button:focus,
+button:active:focus {
     color: #000;
     border-color: #ff120e;
     border-width: 5px;
     border-radius: 10px;
     background-color: #de9696;
+}
+
+/* ----------------------------------- Play with grid 3 X 3 */
+
+
+.square-3x3 {
+    border: 3px solid white;
+    border-radius: 10px;
+    height: 5rem;
+}
+
+.grid-3x3 {
+    width: 70%;
+    margin-top: 9rem;
+}
+
+#button-start {
+    text-align: center;
+    font-size: 2rem;
+    width: 50%;
+    position: relative;
+}
+
+#button-start button {
+    position: absolute;
+    margin-top: 3rem;
 }
