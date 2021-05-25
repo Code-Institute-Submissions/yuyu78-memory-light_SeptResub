@@ -1,59 +1,116 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Memory Light
 
-Welcome USER_NAME,
+The project is a simple and fun memory game inspired by the electronic game Simon, which allows improving memory skills.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+## Table of contents
+1. [UX](#ux)   
+a.[Strategy plane](#strategy-plane)  
+b.[Scope plane](#scope-plane)  
+c.[Structure plane](#structure-plane)   
+d.[Skeleton plane](#skeleton-plane)    
+e.[Surface plane](#surface-plane) 
 
-## Gitpod Reminders
+2. [Technologies used](#technologies-used)  
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+3. [Testing](#testing)
 
-`python3 -m http.server`
+4. [Deployment](#deployment)
 
-A blue button should appear to click: _Make Public_,
+5. [Credits](#credits)
 
-Another blue button should appear to click: _Open Browser_.
+## UX <a name="ux"></a>
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Strategy plane <a name="strategy-plane"></a>
 
-A blue button should appear to click: _Make Public_,
+The goal of this memory game is to repeat and click the sequence of light that the game generated. After each round, one more light will be added to the sequence so it will become progressively longer and more complex which makes it harder to remember, the objective is to succeed the maximum of sequences as the user can.
 
-Another blue button should appear to click: _Open Browser_.
+#### The game is building for: 
+* players for all age, for the kids, teenager, adult, senior 
+* players who want to improve the memory skills 
+* to develop concentration skills
+* Ideal for playing during free time, while waiting the bus, during the break...
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+#### The goal & need of the player:
+**Goal**:
+* Enjoy the game
+* Have a clear information of rule
+* Succeed the sequence of each round as much as they can.
+* Able to play in different device 
 
-To log into the Heroku toolbelt CLI:
+**Need**:
+* to understand easily the game
+* play with easy and good interaction
+* Good and simple visual of the game 
+* Able to contact the business 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+#### The goal & need of the business:
+**Goal**:
+* Provide good UX design
+* Build a simple and intuitive game suitable for players of all age
+* Motivate the user to play again 
+* Help the player to develop the memory skills
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidently make it public then you can create a new one with _Regenerate API Key_.
 
-## Updates Since The Instructional Video
+**Need**:
+* Implement Javascript to set up the rule 
+* Make simple and good visual to make the interaction easy
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+#### User Stories
+##### As a first-time player
+* I want to be able to play the game on different device
+* I want to access to the instruction and have an easy understanding of the rule 
+* I want a good and simple visual so it makes the game more enjoyable 
+* I want to be able to turn off the sound if I am playing in quiet place
+* I want to play the game with good interaction, no any slowness with quick loading  
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+##### As a  returning player: 
+* I want to improve my memory skills
+* I want to save my highscore in a stats board so that I can check my progress 
+* I want to select different number of grid 
+* I want to contact the business if I have any suggestion, feedback related to the game
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Scope plane <a name="scope-plane"></a>
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+#### Features
+* A navigation bar in all the pages with : **Play, Instruction, score, contact**.  
+On the mobile device, the hamburger menu will be used with the toggling behavior. 
+On the right of the navbar, the icon sound will allow to turn on or off the sound.
+* The footer will be displayed in all the page with the copy right, the icon github which will direct to the github page of the project and the social media link.
+* The player can choose between three differents grid to vary the level of difficulty:  2 X 2, 3 X 3, 4 X 4.  
+* Each time the user succeed a round, one light will be added to the sequence to make the game more complex and difficult to memorize. 
+* If the user failed, it will show the score and the high score of the user.
+* In the page of the score, it will show the best score of the user to check the progress.
+* In the instruction page, it explains all the information of the game and the user can click on play button.
+* In the contact page, the user can submit a form for any questions, feedback or suggestion.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Structure plane <a name="structure-plane"></a>
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+* When the player will open the game, the "play" page will be shown. It will display 3 differents pages on the same "play" section:  
+    - The first page is the option to click on “play “and “instruction”.  
+    - If the user click on play, it will show 3 grid options: 2 X 2, 3 X 3, 4 X 4.  
+    - After choosing one of thoses options, it will show the page to allow the user to play the game. 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+    If the user click on “instruction”, it will direct to the instruction page.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+* If the player failed, it will show the page with the current score and the highscore.  
+The player has the option to play again by clicling the button below the score.
 
----
+* On the score page, it will show the four highest score of the player. 
 
-Happy coding!
+* The instruction page provides all the information about the game, the rules. The player has an option to click on the button on the button to start the game after reading the instruction.
+
+* On the contact page, the player has to fill out the name, email address and the message to add any question, suggestion or feedback.
+
+### Skeleton plane <a name="skeleton-plane"></a>
+
+### Surface plane <a name="surface-plane"></a>
+
+## Technologies Used <a name="technologies-used"></a>
+
+## Testing <a name="testing"></a>
+
+## Deployment <a name="deployment"></a>
+
+## Credits <a name="credits"></a>
