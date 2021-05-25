@@ -87,11 +87,34 @@ footer {
     height: 30px;
 }
 
+@media screen and (min-width: 768px) {
+    .square  {
+        height: 50px;
+    }
+}
+
+
 .grid-logo {
     width: 35%;
     height: 20%;
     margin-top: 8rem;
 }
+
+@media screen and (min-width: 768px) {
+    .grid-logo  {
+        width: 25%;
+        margin-top: 13rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .grid-logo  {
+        width: 15%;
+        margin-top: 13rem;
+    }
+}
+
+
 
 /* ----------------------------------- Button play and instruction in home page*/
 
@@ -104,6 +127,25 @@ footer {
     width: 70%;
 }
 
+@media screen and (min-width: 768px) {
+    #button-home-page button {
+        height: 5rem;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #button-home-page button {
+        height: 7rem;
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #button-home-page button {
+        width: 40%;
+    }
+}
 /* ----------------------------------- All button*/
 
 #button-home-page button:hover,
@@ -114,4 +156,5 @@ footer {
     border-color: #ff120e;
     border-width: 5px;
     border-radius: 10px;
+    background-color: #de9696;
 }
