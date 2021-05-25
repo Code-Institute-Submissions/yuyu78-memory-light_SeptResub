@@ -21,7 +21,7 @@ e.[Surface plane](#surface-plane)
 ## UX <a name="ux"></a>
 
 ### Strategy plane <a name="strategy-plane"></a>
-
+---
 The goal of this memory game is to repeat and click the sequence of light that the game generated. After each round, one more light will be added to the sequence so it will become progressively longer and more complex which makes it harder to remember, the objective is to succeed the maximum of sequences as the user can.
 
 #### The game is building for: 
@@ -71,7 +71,7 @@ The goal of this memory game is to repeat and click the sequence of light that t
 
 
 ### Scope plane <a name="scope-plane"></a>
-
+---
 #### Features
 * A navigation bar in all the pages with : **Play, Instruction, score, contact**.  
 On the mobile device, the hamburger menu will be used with the toggling behavior. 
@@ -86,7 +86,7 @@ On the right of the navbar, the icon sound will allow to turn on or off the soun
 
 
 ### Structure plane <a name="structure-plane"></a>
-
+---
 * When the player will open the game, the "play" page will be shown. It will display 3 differents pages on the same "play" section:  
     - The first page is the option to click on “play “and “instruction”.  
     - If the user click on play, it will show 3 grid options: 2 X 2, 3 X 3, 4 X 4.  
@@ -104,6 +104,22 @@ The player has the option to play again by clicling the button below the score.
 * On the contact page, the player has to fill out the name, email address and the message to add any question, suggestion or feedback.
 
 ### Skeleton plane <a name="skeleton-plane"></a>
+---
+#### Wireframe
+
+[Home play page](https://github.com/yuyu78/memory-light/blob/master/wireframe/home%20page%20play.pdf)
+
+[After clicking play button](https://github.com/yuyu78/memory-light/blob/master/wireframe/after%20clicking%20play.pdf)
+
+[Start game](https://github.com/yuyu78/memory-light/blob/master/wireframe/start%20game.pdf)
+
+[Score after playing game ](https://github.com/yuyu78/memory-light/blob/master/wireframe/score%20after%20playing%20game.pdf)
+
+[Scores board](https://github.com/yuyu78/memory-light/blob/master/wireframe/scores%20page.pdf)
+
+[Instruction](https://github.com/yuyu78/memory-light/blob/master/wireframe/instruction.pdf)
+
+[Contact](https://github.com/yuyu78/memory-light/blob/master/wireframe/contact.pdf)
 
 ### Surface plane <a name="surface-plane"></a>
 
