@@ -81,19 +81,6 @@ footer {
     }
 }
 
-/*@media screen and (min-width: 1200px) {
-    footer {
-        position: static;
-        margin-top: 5rem;
-    }
-}
-
-@media screen and (min-width: 1400px) {
-    footer {
-        position: fixed;
-    }
-}*/
-
 .fa-github,
 .fa-facebook-square,
 .fa-instagram,
@@ -205,45 +192,14 @@ footer {
 
 /* ----------------------------------- Play with grid 3 X 3 */
 
+.grid-3x3 {
+    width: 80%;
+}
 
 .square-3x3 {
     border: 3px solid white;
     border-radius: 10px;
     height: 5rem;
-}
-
-@media screen and (min-width: 410px) {
-    .square-3x3{
-        height: 7rem;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .square-3x3 {
-        height: 5.5rem;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .square-3x3 {
-        height: 10rem;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .square-3x3 {
-        height: 15rem;
-    }
-}
-
-.grid-3x3 {
-    width: 80%;
-}
-
-@media screen and (min-width: 410px) {
-    .grid-3x3 {
-        width: 80%;
-    }
 }
 
 #container-button-start {
@@ -262,23 +218,51 @@ footer {
     transform: translate(-50%, -50%);
 }
 
-@media screen and (min-width: 992px){
-    #button-start {
-        font-size: 3rem;
-        top: 80%;
-    }
-} 
+/* responsive under height: 414px, to play horizontally with smartphone*/
 
-@media screen and (max-width: 320px) {
+@media screen and (max-height: 414px) {
+    #page-start-game {
+        margin-top: 5.5rem;
+    }
+    .grid-3x3 {
+        width: 40%;
+    }
+    .square-3x3 {
+        height: 4rem;
+    }
+    #container-button-start {
+        height: 60px;
+    }
+    #button-start {
+        top: 100%;
+    }
+}
+
+/* responsive under height: 320px, to play horizontally with Iphone 5*/
+
+@media screen and (max-height: 320px) {
     #page-start-game {
         margin-top: 5rem;
     }
-    #button-start {
-        font-size: 1.7rem;
+    .grid-3x3 {
+        width: 40%;
     }
-    #container-button-start{
-        height: 120px;
-    } 
+    .square-3x3 {
+        height: 3.5rem;
+    }
+    #container-button-start {
+        height: 40px;
+    }
+    #button-start {
+        font-size: 1.5rem;
+    }
 }
+
+@media screen and (max-width: 320px) {
+    #button-start {
+        font-size: 1.5rem;
+    }
+}
+
 
 
