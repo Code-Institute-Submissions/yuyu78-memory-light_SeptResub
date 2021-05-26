@@ -75,7 +75,7 @@ footer {
     bottom: 0;
 }
 
-@media screen and (min-height: 574px) {
+@media screen and (min-height: 625px) {
     footer {
         position: fixed;
     }
@@ -248,7 +248,7 @@ footer {
         width: 40%;
     }
     .square-3x3 {
-        height: 3.5rem;
+        height: 4rem;
     }
     #container-button-start {
         height: 40px;
@@ -264,5 +264,57 @@ footer {
     }
 }
 
+/* responsive in tablet and desktop*/
+
+@media screen and (min-width: 768px) {
+    .square-3x3 {
+        height: 8rem;
+    }
+}
+
+@media screen and (max-height: 411px) {
+    .square-3x3 {
+        height: 4rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .grid-3x3 {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .grid-3x3 {
+        width: 50%;
+    }
+    .square-3x3 {
+        height: 10rem;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .grid-3x3 {
+        width: 30%;
+    }
+    .square-3x3 {
+        height: 6rem;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .grid-3x3 {
+        width: 35%;
+    }
+    .square-3x3 {
+        height: 10rem;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .grid-3x3 {
+        width: 25%;
+    }
+}
 
 
