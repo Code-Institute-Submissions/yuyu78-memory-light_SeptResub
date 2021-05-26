@@ -69,12 +69,19 @@ main {
 /* ----------------------------------- Footer*/
 
 footer {
-    position: fixed;
+    position: static;
+    margin-top: 4.5rem;
     left: 0;
     bottom: 0;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-height: 574px) {
+    footer {
+        position: fixed;
+    }
+}
+
+/*@media screen and (min-width: 1200px) {
     footer {
         position: static;
         margin-top: 5rem;
@@ -85,7 +92,7 @@ footer {
     footer {
         position: fixed;
     }
-}
+}*/
 
 .fa-github,
 .fa-facebook-square,
@@ -124,10 +131,23 @@ footer {
     margin-top: 8rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 280px) {
+    .grid-logo {
+        width: 45%;
+    }
+}
+
+
+@media screen and (min-width: 568px) {
     .grid-logo {
         width: 25%;
         margin-top: 5rem;
+    }
+}
+
+@media screen and (min-width: 730px) {
+    .grid-logo {
+        width: 20%;
     }
 }
 
