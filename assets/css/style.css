@@ -101,6 +101,12 @@ footer {
     box-shadow: 0 0 3pt 2pt #e8a99a;
 }
 
+/* ----------------------------------- header*/
+
+.header-style {
+    text-decoration: underline;
+}
+
 /* ----------------------------------- homepage*/
 
 /* main homepage*/
@@ -404,10 +410,19 @@ table.center {
     }
 }
 
-.header-style {
-    text-decoration: underline;
-}
-
 .score-result {
     width: 65%;
+}
+
+/* ----------------------------------- Instruction page*/
+
+#margin-instruction {
+    margin: 20px 10px auto 10px;
+}
+
+@media screen and (min-width: 768px) {
+    #margin-instruction {
+        margin: 5rem 10px auto 10px;
+        font-size: 1.5rem;
+    }
 }
