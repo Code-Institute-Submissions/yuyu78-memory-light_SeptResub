@@ -63,7 +63,7 @@ footer {
     bottom: 0;
 }
 
-@media screen and (min-height: 538px) {
+@media screen and (min-height: 625px) {
     footer {
         position: fixed;
     }
@@ -121,21 +121,9 @@ footer {
     }
 }
 
-@media screen and (min-height: 1024px) {
-    #margin-homepage {
-        margin-top: 6.5rem;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    #margin-homepage {
-        margin-top: 8rem;
-    }
-}
-
 @media screen and (min-width: 1300px) {
     #margin-homepage {
-        margin-top: 4rem;
+        margin-top: 1rem;
     }
 }
 
@@ -180,7 +168,6 @@ footer {
 @media screen and (min-width: 1200px) {
     .grid-logo {
         width: 15%;
-        /* margin-top: 13rem;*/
     }
 }
 
@@ -204,14 +191,14 @@ footer {
 
 @media screen and (min-width: 768px) {
     #button-home-page button {
-        height: 5rem;
+        height: 3.5rem;
         /*margin-top: 1rem;*/
     }
 }
 
 @media screen and (min-width: 1200px) {
     #button-home-page button {
-        height: 7rem;
+        height: 5rem;
         width: 40%;
     }
 }
@@ -396,13 +383,6 @@ table.center {
         margin-top: 0;
     }
 }
-
-
-/*@media screen and (max-height: 568px) {
-    #margin-score-page {
-        margin-top: 3rem;
-    }
-}*/
 
 @media screen and (min-height: 1024px) {
     #margin-score-page {
