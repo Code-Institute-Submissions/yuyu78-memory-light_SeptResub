@@ -54,18 +54,6 @@ h1 {
     }
 }
 
-/* ----------------------------------- main */
-
-main {
-    margin-top: 8rem
-}
-
-@media screen and (min-height: 1024px) {
-    main {
-        margin-top: 15rem;
-    }
-}
-
 /* ----------------------------------- Footer*/
 
 footer {
@@ -75,7 +63,7 @@ footer {
     bottom: 0;
 }
 
-@media screen and (min-height: 625px) {
+@media screen and (min-height: 630px) {
     footer {
         position: fixed;
     }
@@ -99,7 +87,65 @@ footer {
     color: #ef3127;
 }
 
-/* ----------------------------------- Grid*/
+/* ----------------------------------- All button*/
+
+.btn-game:hover,
+.btn-game:active,
+.btn-game:focus,
+.btn-game:active:focus {
+    color: #000;
+    border: 3px solid#ff0000;
+    border-radius: 10px;
+    background-color: #eac7c7;
+    ;
+    box-shadow: 0 0 3pt 2pt #e8a99a;
+}
+
+/* ----------------------------------- homepage*/
+
+/* main homepage*/
+
+#margin-homepage {
+    margin-top: 4rem;
+}
+
+@media screen and (max-height: 360px) {
+    #margin-homepage {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-height: 320px) {
+    #margin-homepage {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-height: 1024px) {
+    #margin-homepage {
+        margin-top: 6.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #margin-homepage {
+        margin-top: 8rem;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    #margin-homepage {
+        margin-top: 4rem;
+    }
+}
+
+/*@media screen and (min-height: 1024px) {
+    main {
+        margin-top: 15rem;
+    }
+}*/
+
+/* Grid logo*/
 
 .grid-logo .col-4 {
     border: 3px solid white;
@@ -115,7 +161,7 @@ footer {
 
 .grid-logo {
     width: 35%;
-    margin-top: 8rem;
+    /*margin-top: 8rem;*/
 }
 
 @media screen and (max-width: 280px) {
@@ -124,11 +170,10 @@ footer {
     }
 }
 
-
 @media screen and (min-width: 568px) {
     .grid-logo {
         width: 25%;
-        margin-top: 5rem;
+        /*margin-top: 5rem;*/
     }
 }
 
@@ -141,11 +186,17 @@ footer {
 @media screen and (min-width: 1200px) {
     .grid-logo {
         width: 15%;
-        margin-top: 13rem;
+       /* margin-top: 13rem;*/
     }
 }
 
-/* ----------------------------------- Button play and instruction in home page*/
+/* Button play and instruction of home page*/
+
+@media screen and (max-height: 414px) {
+    #margin-homepage .mt-5 {
+        margin-top: 1.5rem!important;;
+    }
+}
 
 #button-home-page {
     text-align: center;
@@ -159,7 +210,7 @@ footer {
 @media screen and (min-width: 768px) {
     #button-home-page button {
         height: 5rem;
-        margin-top: 1rem;
+        /*margin-top: 1rem;*/
     }
 }
 
@@ -176,21 +227,9 @@ footer {
     }
 }
 
-/* ----------------------------------- All button*/
+/* ----------------------------------- Page with the grid 3X3 and button below "let's start to play" */
 
-.btn-game:hover,
-.btn-game:active,
-.btn-game:focus,
-.btn-game:active:focus {
-    color: #000;
-    border: 3px solid#ff0000;
-    border-radius: 10px;
-    background-color: #eac7c7;
-    ;
-    box-shadow: 0 0 3pt 2pt #e8a99a;
-}
-
-/* ----------------------------------- Play with grid 3 X 3 */
+/*grid 3 X 3 */
 
 .grid-3x3 {
     width: 80%;
@@ -202,11 +241,12 @@ footer {
     height: 5rem;
 }
 
+/*Button "let's start */
+
 #container-button-start {
     height: 160px;
     position: relative;
 }
-
 
 #button-start {
     font-size: 2rem;
