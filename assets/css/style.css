@@ -139,12 +139,6 @@ footer {
     }
 }
 
-/*@media screen and (min-height: 1024px) {
-    main {
-        margin-top: 15rem;
-    }
-}*/
-
 /* Grid logo*/
 
 .grid-logo .col-4 {
@@ -260,9 +254,13 @@ footer {
 
 /* responsive under height: 414px, to play horizontally with smartphone*/
 
+#page-start-game {
+        margin-top: 7rem;
+    }
+
 @media screen and (max-height: 414px) {
     #page-start-game {
-        margin-top: 5.5rem;
+        margin-top: 5rem;
     }
     .grid-3x3 {
         width: 40%;
@@ -282,7 +280,7 @@ footer {
 
 @media screen and (max-height: 320px) {
     #page-start-game {
-        margin-top: 5rem;
+        margin-top: 4.2rem;
     }
     .grid-3x3 {
         width: 40%;
@@ -305,6 +303,12 @@ footer {
 }
 
 /* responsive in tablet and desktop*/
+
+@media screen and (min-width: 768px) {
+    #page-start-game {
+        margin-top: 9rem;
+    }
+}
 
 @media screen and (min-width: 768px) {
     .square-3x3 {
