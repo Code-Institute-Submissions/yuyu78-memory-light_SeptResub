@@ -47,6 +47,7 @@ function playerFunctionality(turn) {
             } else {
                 console.log("wrong");
                 document.getElementById("button-start").style.display = "block";
+                // Ensure the turn goes back to 0 
                 document.getElementById('turn').innerHTML = '2';
             }
         });
