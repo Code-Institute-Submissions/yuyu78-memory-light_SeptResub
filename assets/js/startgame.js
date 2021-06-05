@@ -12,22 +12,27 @@ function startGame() {
     console.log(numbers);
     showLights(0, turn)
     
+    // Player turn
     if(document.getElementById("addListenerFlag").innerHTML == "true") {
         playerFunctionality(turn);
     }
-    document.getElementById("addListenerFlag").innerHTML = "false";
+
 }
 
 function playerFunctionality(turn) {
     // Get all squares
     let squares = document.querySelectorAll(".square-3x3");
+    // Add click functionality for each square
     for (const element of squares) {
         element.addEventListener("click", () => {
+            // Check if player choice is correct
             if (Number(element.id) == numbers[0]) {
                 numbers.shift(); 
+                // If player choices are all correct
                 console.log(numbers);
                 if(numbers.length == 0) {
                     console.log("correct");
+                    // New turn 
                     document.getElementById("button-start").style.display = "block";
                 }
             } else {
@@ -36,15 +41,21 @@ function playerFunctionality(turn) {
             }
         });
     };
+    // To ensure that the click event listeners are only added once to each button and not repeatedly
+    document.getElementById("addListenerFlag").innerHTML = "false";
 };
 
+// Computer choice 
 function showLights(count, turn) {
+    // Show red light
     document.getElementById(numbers[count].toString()).style.backgroundColor = "red";
     i = count;
+    // Make light wait 1 second before dissapearing 
     setTimeout(function() {
         document.getElementById(numbers[i].toString()).style.backgroundColor = "black";
         i++;
         if (i < turn) {
+            // Display next light
             showLights(i, turn);
         }
     }, 1000);
