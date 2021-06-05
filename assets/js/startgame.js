@@ -3,13 +3,20 @@ function startGame() {
     document.getElementById('button-start').style.display = 'none';
 
     // Create a random list of number and add in the array
-    let turn = 3;
+    let turn = 6;
     numbers =[];
     for (i = 0; i < turn; i++) {
         let randomNumber = Math.floor(Math.random() * 9);
-        numbers.push(randomNumber);
+        // Avoid the same number
+        if(numbers.includes(randomNumber)) {
+            i--;
+        } else {
+            numbers.push(randomNumber);
+        }
+        console.log(numbers);
     }
-    console.log(numbers);
+
+    // Computer shows light
     showLights(0, turn)
     
     // Player turn
