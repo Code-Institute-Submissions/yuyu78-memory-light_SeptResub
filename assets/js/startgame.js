@@ -1,3 +1,1 @@
-function startGame(){
-    document.getElementById("disappear").style.display = "none";
-}
+console.log("hello");
