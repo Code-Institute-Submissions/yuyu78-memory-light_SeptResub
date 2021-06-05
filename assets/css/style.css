@@ -426,3 +426,9 @@ table.center {
         font-size: 1.5rem;
     }
 }
+
+/* ----------------------------------- For Javascript*/
+
+#addListenerFlag {
+    display: none;
+}
