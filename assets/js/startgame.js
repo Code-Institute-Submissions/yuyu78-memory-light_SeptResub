@@ -1,1 +1,3 @@
-console.log("hello");
+function startGame() {
+    document.getElementById('button-start').style.display = 'none';
+}
