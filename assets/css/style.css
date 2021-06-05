@@ -429,6 +429,7 @@ table.center {
 
 /* ----------------------------------- For Javascript*/
 
-#addListenerFlag {
+#turn, #addListenerFlag {
     display: none;
 }
+
