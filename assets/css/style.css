@@ -62,21 +62,9 @@ h1 {
 
 footer {
     margin-top: auto;
+    margin-bottom: 5px;
 }
 
-/*footer {
-    position: static;
-    margin-top: 4.5rem;
-    left: 0;
-    bottom: 0;
-}
-
-@media screen and (min-height: 625px) {
-    footer {
-        position: fixed;
-    }
-}
-*/
 .fa-github,
 .fa-facebook-square,
 .fa-instagram,
@@ -93,6 +81,23 @@ footer {
 .fa-linkedin:hover,
 .fa-github:hover {
     color: #ef3127;
+}
+
+.social-media-position {
+    position: relative;
+}
+
+@media screen and (min-width: 768px) {
+    footer {
+        margin-bottom: 15px;
+    }
+    footer .col-md-8 {
+        font-size: 1.2rem;
+    }
+    .social-media-position {
+        right: 30px;
+        position: absolute;
+    }
 }
 
 /* ----------------------------------- All button*/
