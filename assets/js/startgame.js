@@ -53,6 +53,7 @@ function playerFunctionality(turn) {
                 document.getElementById("button-start").style.display = "block";
                 // Ensure the turn goes back to 0 
                 document.getElementById('turn').innerHTML = '2';
+                document.getElementById("result-score").innerHTML = 0;
             }
         });
     };
