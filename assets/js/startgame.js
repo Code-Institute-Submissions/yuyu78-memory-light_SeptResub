@@ -55,9 +55,14 @@ function playerFunctionality(turn) {
 
                 // Get the current total high score 
                 let currentHighScore = Number(document.getElementById("result-highscore").innerHTML);
-
+                
+                // Compare the current game's score with the total high score and if the
+                // Current game's score is bigger than the current highScore make the current
+                // Score the new total high score
                 if(resultScore > currentHighScore) {
-                    document.getElementById("result-highscore").innerHTML = resultScore;  
+                    document.getElementById("result-highscore").innerHTML = resultScore;
+                    // use function to set up the new highscore in localStorage
+                    setAllHighScores(resultScore);  
                 }
 
                 // Show start button after wrong to allow to restart the game
