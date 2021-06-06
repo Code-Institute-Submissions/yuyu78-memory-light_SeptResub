@@ -1,3 +1,21 @@
+// Displays the historical high score
+// to be used at the beginning
+function initiateHighScore() {
+  // Check localStorage and if there get the highest score
+  let highScoreBegin = localStorage.getItem('highScore') ? JSON.parse(localStorage.getItem('highScore'))[2] : 0;
+
+  // get the current high score
+  let currentHighScore = Number(document.getElementById('result-highscore').innerHTML);
+
+  // If the highScore is there and it's bigger than the current one set the current score
+  // as the new high score.
+  if (highScoreBegin && highScoreBegin > currentHighScore) {
+    document.getElementById('result-highscore').innerHTML = highScoreBegin;
+  }
+}
+// Call this function when page begins to ensure scores are started at beginning of game
+initiateHighScore();
+
 function startGame() {
     // When click on the button "Let's start, the button will disappear
     document.getElementById('button-start').style.display = 'none';
