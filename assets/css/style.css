@@ -412,19 +412,24 @@ table.center {
 /* ----------------------------------- Instruction page*/
 
 #margin-instruction {
-    margin: 20px 10px auto 10px;
+    margin: 20px 10px 40px 10px;
 }
 
 @media screen and (min-width: 768px) {
     #margin-instruction {
-        margin: 5rem 10px auto 10px;
+        margin: 40px 10px 30px 10px;
         font-size: 1.5rem;
     }
-}
+    #margin-instruction .header-style {
+        margin-bottom: 3rem;
+    }
+    #margin-instruction button {
+        margin-top: 2rem;
+    }
 
 /* ----------------------------------- For Javascript*/
 
-#turn, #addListenerFlag{
+#turn, #addListenerFlag {
     display: none;
 }
 
