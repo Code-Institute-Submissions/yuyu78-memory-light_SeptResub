@@ -17,6 +17,10 @@ function initiateHighScore() {
 initiateHighScore();
 
 function startGame() {
+    // Ensure previous game's comments are not showing at start of new turn
+    document.querySelector('.wrong').style.display = 'none';
+    document.querySelector('.correct').style.display = 'none';
+
     // When click on the button "Let's start, the button will disappear
     document.getElementById('button-start').style.display = 'none';
 
@@ -56,7 +60,7 @@ function playerFunctionality(turn) {
                 // If player choices are all correct
                 console.log(numbers);
                 if(numbers.length == 0) {
-                    console.log("correct");
+  
                     // Increase score 
                     let resultScore = Number(document.getElementById("result-score").innerHTML);
                     document.getElementById("result-score").innerHTML = resultScore + 1;
@@ -64,6 +68,10 @@ function playerFunctionality(turn) {
                     // New turn and increase difficulty one by one 
                     turn = turn + 1;
                     document.getElementById("turn").innerHTML = turn.toString();
+
+                    // Show correct message 
+                    document.querySelector(".correct").style.display = "block";
+
                     document.getElementById("button-start").style.display = "block";
                 }
             } else {
@@ -82,6 +90,9 @@ function playerFunctionality(turn) {
                     // use function to set up the new highscore in localStorage
                     setAllHighScores(resultScore);  
                 }
+
+                // Show wrong message if player fails
+                document.querySelector(".wrong").style.display = "block";
 
                 // Show start button after wrong to allow to restart the game
                 document.getElementById("button-start").style.display = "block";

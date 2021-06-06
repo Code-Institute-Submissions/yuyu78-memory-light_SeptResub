@@ -433,3 +433,14 @@ table.center {
     display: none;
 }
 
+.correct {
+    display: none;
+    font-size: 1.5rem;
+    color: #64ff94;
+}
+
+.wrong {
+    display: none;
+    font-size: 1.5rem;
+    color: #f15c5c;
+}
