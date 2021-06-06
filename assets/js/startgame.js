@@ -52,8 +52,20 @@ function playerFunctionality(turn) {
                     document.getElementById("button-start").style.display = "block";
                 }
             } else {
-                console.log("wrong");
+                // Get the current game's score
+                let resultScore = Number(document.getElementById("result-score").innerHTML);
+                Number(document.getElementById("result-score").innerHTML)
+
+                // Get the current total high score 
+                let currentHighScore = Number(document.getElementById("result-highscore").innerHTML);
+
+                if(resultScore > currentHighScore) {
+                    document.getElementById("result-highscore").innerHTML = resultScore;  
+                }
+
+                // Show start button after wrong to allow to restart the game
                 document.getElementById("button-start").style.display = "block";
+
                 // Ensure the turn goes back to 0 
                 document.getElementById('turn').innerHTML = '2';
 
