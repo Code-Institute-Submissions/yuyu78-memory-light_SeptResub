@@ -235,15 +235,9 @@ footer {
     height: 160px;
     position: relative;
 }
-
+ 
 #button-start {
-    font-size: 2rem;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    font-size: 1.3rem;
 }
 
 /* responsive under height: 414px, to play horizontally with smartphone*/
@@ -269,9 +263,6 @@ footer {
         height: 60px;
     }
 
-    #button-start {
-        top: 100%;
-    }
 }
 
 /* responsive under height: 320px, to play horizontally with Iphone 5*/
@@ -293,15 +284,6 @@ footer {
         height: 40px;
     }
 
-    #button-start {
-        font-size: 1.5rem;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    #button-start {
-        font-size: 1.5rem;
-    }
 }
 
 /* responsive in tablet and desktop*/

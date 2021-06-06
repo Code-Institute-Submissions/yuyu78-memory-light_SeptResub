@@ -72,7 +72,7 @@ function playerFunctionality(turn) {
                     // Show correct message 
                     document.querySelector(".correct").style.display = "block";
 
-                    document.getElementById("button-start").style.display = "block";
+                    document.getElementById("button-start").style.cssText = "display: flex; justify-content: center";
                 }
             } else {
                 // Get the current game's score
@@ -95,7 +95,7 @@ function playerFunctionality(turn) {
                 document.querySelector(".wrong").style.display = "block";
 
                 // Show start button after wrong to allow to restart the game
-                document.getElementById("button-start").style.display = "block";
+                document.getElementById("button-start").style.cssText = "display: flex; justify-content: center";
 
                 // Ensure the turn goes back to 0 
                 document.getElementById('turn').innerHTML = '2';
