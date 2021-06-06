@@ -39,6 +39,10 @@ function playerFunctionality(turn) {
                 console.log(numbers);
                 if(numbers.length == 0) {
                     console.log("correct");
+                    // Increase score 
+                    let resultScore = Number(document.getElementById("result-score").innerHTML);
+                    document.getElementById("result-score").innerHTML = resultScore + 1;
+
                     // New turn and increase difficulty one by one 
                     turn = turn + 1;
                     document.getElementById("turn").innerHTML = turn.toString();
