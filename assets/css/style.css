@@ -426,6 +426,33 @@ table.center {
     #margin-instruction button {
         margin-top: 2rem;
     }
+}
+
+/* ----------------------------------- contact page*/
+
+form {
+    margin: 20px 10px 30px 10px;
+}
+
+@media screen and (min-width: 768px) {
+    form {
+    font-size: 1.4rem;
+    }
+}
+
+form h2 {
+    text-decoration: underline;
+}
+
+form button {
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    form button {
+    margin-top: 40px;
+    }
+}
 
 /* ----------------------------------- For Javascript*/
 
