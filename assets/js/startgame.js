@@ -2,6 +2,9 @@ function startGame() {
     // When click on the button "Let's start, the button will disappear
     document.getElementById('button-start').style.display = 'none';
 
+    document.getElementById("score").style.display = "none";
+    document.querySelector(".result-score-play").style.display = "block";
+
     // Create a random list of number and add in the array
     let turn = Number(document.getElementById("turn").innerHTML);
     numbers =[];
@@ -53,7 +56,15 @@ function playerFunctionality(turn) {
                 document.getElementById("button-start").style.display = "block";
                 // Ensure the turn goes back to 0 
                 document.getElementById('turn').innerHTML = '2';
+
+                // Reset the current score to 0
                 document.getElementById("result-score").innerHTML = 0;
+
+                // Show the current score 
+                document.getElementById("score").style.display = "block";
+
+                // Hide the score placed below the grid
+                document.querySelector(".result-score-play").style.display = "none";
             }
         });
     };

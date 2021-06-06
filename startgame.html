@@ -39,7 +39,7 @@
         </nav>
     </header>
 
-    <main id = "page-start-game">
+    <main id="page-start-game">
         <div class="container grid-3x3">
             <div class="row">
                 <div class="col-4 square-3x3" id="0">
@@ -64,17 +64,22 @@
                 </div>
                 <div class="col-4 square-3x3" id="8">
                 </div>
-                <div class="container">
-                    <div class="row">Score:<pre> </pre> <span id="result-score">0</span></div>
+                <div class="container mt-3 result-score-play">
+                    <div class="row">Score:
+                        <pre> </pre> <span id="result-score">0</span></div>
+                </div>
+                <div id="score">
+                    <div class="container mt-3">
+                        <div class="row">Current Score:
+                            <pre> </pre><span id="result-score"> 0</span></div>
+                        <div class="row">High Score:
+                            <pre> </pre><span id="result-highscore"> 0</span></div>
+                    </div>
                 </div>
                 <!-- These two elements are not shown to the player - needed as value storage for js file -->
                 <div id="turn">2</div>
                 <div id="addListenerFlag">true</div>
             </div>
-        </div>
-        <div class="container">
-            <div class = "row mx-3">Current Score: <pre> </pre><span id="result-score"> 0</span></div>
-            <div class = "row mx-3">High Score: <pre> </pre><span id="result-highscore"> 0</span></div>
         </div>
         <div id="container-button-start">
             <div id="button-start">
