@@ -263,6 +263,11 @@ This solution was found in stack overflow [here](https://stackoverflow.com/quest
 
 * The problem is when reloading the page, the high score will show 0. To display the last high score even after reloading the page, add the function **initiateHighScore** and get the last high score if there is one in the local storage. 
 
+* Checked the validity of the code with HTML Markup Validation Service and CSS Validation Service and there were no errors.  However, in JS hint. there are several error : 
+    * An error message 	"**'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).**".  
+    I checked in [stack overflow](https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const) so just need to add comment **/*jshint esversion: 6 */ ** on the top of the JS file. 
+    * An error saying that the variable "**numbers**" is not defined, but if I defined this variable, the code is not working. 
+
 ---
 ## Deployment <a name="deployment"></a>
 ---
