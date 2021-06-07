@@ -13,6 +13,7 @@ body {
 
 /* ----------------------------------- navbar */
 
+/* name brand */
 h1 {
     font-size: 1.8rem;
     font-weight: 700;
@@ -26,6 +27,7 @@ h1 {
   color:rgb(230, 84, 84);
 }
 
+/* navabr menu*/
 .navbar {
     background-color: black;
 }
@@ -64,6 +66,10 @@ h1 {
         margin-right: 0;
         font-size: 1.5rem;
     }
+}
+
+.navbar-nav>li>a:hover {
+  color: rgb(230, 84, 84);
 }
 
 /* ----------------------------------- Footer*/
