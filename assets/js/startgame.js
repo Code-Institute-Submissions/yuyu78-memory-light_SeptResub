@@ -39,7 +39,7 @@ function startGame() {
     }
 
     // Computer shows light
-    showLights(0, turn)
+    showLights(0, turn);
     
     // Player turn
     if(document.getElementById("addListenerFlag").innerHTML == "true") {
@@ -58,7 +58,6 @@ function playerFunctionality(turn) {
             if (Number(element.id) == numbers[0]) {
                 numbers.shift(); 
                 // If player choices are all correct
-                console.log(numbers);
                 if(numbers.length == 0) {
   
                     // Increase score 
@@ -77,7 +76,7 @@ function playerFunctionality(turn) {
             } else {
                 // Get the current game's score
                 let resultScore = Number(document.getElementById("result-score").innerHTML);
-                Number(document.getElementById("result-score").innerHTML)
+                Number(document.getElementById("result-score").innerHTML);
 
                 // Get the current total high score 
                 let currentHighScore = Number(document.getElementById("result-highscore").innerHTML);
@@ -108,10 +107,10 @@ function playerFunctionality(turn) {
 
             }
         });
-    };
+    }
     // To ensure that the click event listeners are only added once to each button and not repeatedly
     document.getElementById("addListenerFlag").innerHTML = "false";
-};
+}
 
 // Computer choice 
 function showLights(count, turn) {
