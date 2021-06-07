@@ -87,9 +87,10 @@ On the right of the navbar, the icon sound will allow to turn on or off the soun
 * In the instruction page, it explains all the information of the game and the user can click on play button.
 * In the contact page, the user can submit a form for any questions, feedback or suggestion.
 
-##### Features Left to Implement
+##### Features Left to Implement  
+Due to the lack of time, there are many feature I couldn't implement. 
 * For the moment, the game is a grid 3 X 3. Add different level with different grid to vary the difficulty :  2 X 2  4 X 4. 
-* Add javascript in the contact form, due to the lack of time, I couldn't finish.
+* Add javascript in the contact form.
 * Add stats board displaying the three highest score of the player
 * Add option to use the timer so it will increase the difficulty of the game
 * Add sounds effects
@@ -176,7 +177,7 @@ The reason od the choice is the form of this typography is straight and ideal fo
 ### Devices tested
 
 ## Testing User Stories
-1. I want to be able to play the game on different device  
+1. **As a first-time player, I want to be able to play the game on different device**
 
     **Devices tested during the project**: 
 * Desktop
@@ -191,12 +192,40 @@ The reason od the choice is the form of this typography is straight and ideal fo
 * Ipad Pro
 * Surface Duo
 
-2. I want to access to the instruction and have an easy understanding of the rule
-    * The playe can click on the first page the instruction button or on the navbar before playing.  
-    The explanation is simple and clear. At the end of the instruction, the player can click on the button "play" to start the game. 
+2. **As a first-time player, I want to access to the instruction and have an easy understanding of the rule**  
+    * The player can click on the first page the instruction button or on the navbar before playing.  
+    * The explanation is simple and clear. At the end of the instruction, the player can click on the button "play" to start the game. 
 
-3. I want a good and simple visual so it makes the game more enjoyable
-    The concept and the visual of the game is very simple.
+3. **As a first-time player, I want a good and simple visual so it makes the game more enjoyable**
+    The design of the game is very simple. 
+    * The background is black and the grid, font color are white so it gives a great contrast between colors and make the visual better.    
+    * When the user play the game, it will display a sequence of red color. A flashy red color is chosen to also give a good contrast.
+
+4. **As a first-time player, I want to be able to turn off the sound if I am playing in quiet place**  
+    The sound effect is a feature Left to Implement in the future, for the moment, there is not sound in the game.  
+
+5. **As a first-time player, I want to play the game with good interaction, no any slowness with quick loading**
+    * When the user hovers all the button, including the social media link, the color will turn to red.
+    * Every time the user succeed the game, it will add one point in the current score and will appear a correct message in green color "Correct! Click button again to continue". 
+    * If the user failed the game, it will reset the current score to 0 and will appear a message in red color "Wrong! Click button to Start Again". 
+
+6. **As a returning player, I want to improve my memory skills**
+    * The game will start with a sequence of two light. Each time the player succeed the round, one more light will be added to the sequence so it will become prograssively longer and more difficult to remember.  
+    This is a good exercise to improve the memory skills. 
+
+7. **As a returning player, I want to save my highscore in a stats board so that I can check my progress**
+    * Due to the lack of time, the score page which will show the three highest score of the player will be a feature implemented in the future.  
+    For the moment, only one highscore will be shown in the page before the player start the game, below the grid with the current score. 
+    * The highscore will be save in the storage so if the player reload the page, it will still show the highscore. 
+
+8. **As a returning player, I want to select different number of grid**
+    *  This is a future features to implement the grids of 2 X 2 and 4 X 4 so that the player can vary the level of difficulty.
+
+9. **As a returning player, I want to contact the business if I have any suggestion, feedback related to the game**
+    * The player can access to the contact page to fill the form. Al the inputs are required to submit the form.
+    I didn't have time to work the contact form on Javascript so for the moment, if the player click on the submit button, it will show an error message.  
+    I will be a future feature to implement. 
+
 ## Deployment <a name="deployment"></a>
 ---
 Gitpod was used to develop the project and deployed through Github Pages.   
