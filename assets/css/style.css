@@ -253,52 +253,6 @@ footer {
     font-size: 1.3rem;
 }
 
-/* responsive under height: 414px, to play horizontally with smartphone*/
-
-#page-start-game {
-    margin-top: 4rem;
-}
-
-@media screen and (max-height: 414px) {
-    #page-start-game {
-        margin-top: 1rem;
-    }
-
-    .grid-3x3 {
-        width: 40%;
-    }
-
-    .square-3x3 {
-        height: 4rem;
-    }
-
-    #container-button-start {
-        height: 60px;
-    }
-
-}
-
-/* responsive under height: 320px, to play horizontally with Iphone 5*/
-
-@media screen and (max-height: 375px) {
-    #page-start-game {
-        margin-top: 1rem;
-    }
-
-    .grid-3x3 {
-        width: 40%;
-    }
-
-    .square-3x3 {
-        height: 4rem;
-    }
-
-    #container-button-start {
-        height: 40px;
-    }
-
-}
-
 /* responsive in tablet and desktop*/
 
 @media screen and (min-width: 768px) {
