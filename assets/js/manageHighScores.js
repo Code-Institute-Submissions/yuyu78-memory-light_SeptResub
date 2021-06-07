@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 function setAllHighScores(newHighScore) {
   // Check if there is any localStorage and if not return array with 0s
   let storedScore = localStorage.getItem('highScore') ? JSON.parse(localStorage.getItem('highScore')) : [0, 0, 0];

@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 // Displays the historical high score
 // to be used at the beginning
 function initiateHighScore() {
