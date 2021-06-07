@@ -1,6 +1,10 @@
 # Memory Light
 
+![screenshot app all devices](https://user-images.githubusercontent.com/76018052/121008490-f719a780-c78a-11eb-98c1-8549c9245529.PNG)
+
 The project is a simple and fun memory game inspired by the electronic game Simon, which allows improving memory skills.
+
+View the website [here](https://yuyu78.github.io/memory-light/index.html).
 
 ## Table of contents
 1. [UX](#ux)   
@@ -204,10 +208,11 @@ The steps for the deployment of the project:
 3. From the list of the repositories, select **memory-light**  
 4. Click on **Settings**  on the right of the menu items  
 5. Scroll down to the **GitHub Pages**  
-6. Under source in the dropdown menu, select **Master**
-7. On the right, select the folder **/(root)**  
-8. Click **Save** and the page will automatically refresh  
-9. Scroll back again to the **GitHub Pages** and click on the link to the deployed site
+6. On the **GitHub Pages** section, it will show a message "settings now has its own dedicated tab! Check it out here!", click on "Check it out here!" which will direct to the github pages
+7. Under source in the dropdown menu, select **Master**
+8. On the right, select the folder **/(root)**  
+9. Click **Save** and it will appear a message "Your site is published at https://yuyu78.github.io/memory-light/"
+9. Click on the link to the deployed site
 
 ### To run the project locally  
 
