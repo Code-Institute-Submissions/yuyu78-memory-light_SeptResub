@@ -18,6 +18,14 @@ h1 {
     font-weight: 700;
 }
 
+.name-brand {
+    color: white;
+}
+
+.name-brand:hover {
+  color:rgb(230, 84, 84);
+}
+
 .navbar {
     background-color: black;
 }
