@@ -15,11 +15,13 @@
     <header>
         <!-- Navigation bar-->
         <nav class="navbar navbar-expand-md">
+            <!-- Name brand clickable-->
             <h1><a class="name-brand" href = "index.html">Memory Light</a></h1>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fas fa-bars navbar-menu-icon"></i></span>
             </button>
+            <!-- Menu to click-->
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -41,6 +43,7 @@
 
     <main id="page-start-game">
         <div class="container grid-3x3 mt-5">
+            <!--Grid 3 X 3-->
             <div class="row">
                 <div class="col-4 square-3x3" id="0">
                 </div>
@@ -64,10 +67,13 @@
                 </div>
                 <div class="col-4 square-3x3" id="8">
                 </div>
+                <!--Score-->
                 <div id="score">
                     <div class="container mt-2">
+                        <!--Current score-->
                         <div class="row">Current Score:
                             <pre> </pre><span id="result-score"> 0</span></div>
+                        <!--Highscore-->
                         <div class="row">High Score:
                             <pre> </pre><span id="result-highscore"> 0</span></div>
                     </div>
@@ -76,12 +82,15 @@
                 <div id="turn">2</div>
                 <div id="addListenerFlag">true</div>
             </div>
+            <!--Correct message-->
             <div class="row correct">
                 <p>Correct! Click button again to continue</p>
             </div>
+            <!--Wrong message -->
             <div class="row wrong ">
                 <p>Wrong! Click button to Start Again</p>
             </div>
+            <!--Button start-->
             <div id="container-button-start" >
                 <div class="row justify-content-center" id="button-start">
                     <button onclick="startGame()" class="btn-game">Let's Start!</button>
@@ -93,34 +102,38 @@
     <!--Footer-->
     <footer class="container-fluid">
         <div class="row">
+            <!--Social media link-->
             <div class="col-12 col-md-4 order-md-last">
                 <ul class="list-inline social-media-position">
-                    <!--Github link-->
+                    <!--Github-->
                     <li class="list-inline-item">
                         <a target="_blank" href="https://github.com/" rel="noopener">
                             <i class="fab fa-github" aria-hidden="true"></i>
                             <span class="sr-only">Github</span>
                         </a>
                     </li>
-                    <!--Social media-->
+                    <!--Facebook-->
                     <li class="list-inline-item">
                         <a target="_blank" href="https://www.facebook.com/" rel="noopener">
                             <i class="fab fa-facebook-square" aria-hidden="true"></i>
                             <span class="sr-only">Facebook</span>
                         </a>
                     </li>
+                    <!--Instagram-->
                     <li class="list-inline-item">
                         <a target="_blank" href="https://www.instagram.com/" rel="noopener">
                             <i class="fab fa-instagram" aria-hidden="true"></i>
                             <span class="sr-only">Instagram</span>
                         </a>
                     </li>
+                    <!--Twitter-->
                     <li class="list-inline-item">
                         <a target="_blank" href="https://twitter.com/" rel="noopener">
                             <i class="fab fa-twitter-square" aria-hidden="true"></i>
                             <span class="sr-only">Twitter</span>
                         </a>
                     </li>
+                    <!--Linkedink-->
                     <li class="list-inline-item">
                         <a target="_blank" href="https://ie.linkedin.com/" rel="noopener">
                             <i class="fab fa-linkedin" aria-hidden="true"></i>
@@ -129,6 +142,7 @@
                     </li>
                 </ul>
             </div>
+            <!--Copy right-->
             <div class="col-12 col-md-8 order-md-first">
                 <i class="far fa-copyright"></i> 2021, Memory Light, Code Institute
             </div>
@@ -144,8 +158,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
     </script>
-    <script src="assets/js/startgame.js"></script>
-    <script src="assets/js/manageHighScores.js"></script>
 </body>
 
 </html>
