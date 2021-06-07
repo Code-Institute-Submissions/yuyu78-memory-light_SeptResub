@@ -252,6 +252,9 @@ In the screenshot below, the computer chose [7, 6]. When the player guesses the 
 
     ![correct](https://user-images.githubusercontent.com/76018052/121048890-20e4c580-c7af-11eb-8e8e-06ae53adf687.PNG)
 
+* When the red light will show, to make disappear the light in one second I added setTimeout on the function showLights so after one second. the red light will turn to black.
+This solution was found in stack overflow [here](https://stackoverflow.com/questions/3583724/how-do-i-add-a-delay-in-a-javascript-loop).
+
 * Check if every time the first round is succeeded, it will add one point in the current score with the correct green message.
 
 * Check if the game failed, the current score will reset to 0 with the wrong red message. 
