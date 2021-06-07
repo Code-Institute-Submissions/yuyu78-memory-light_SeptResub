@@ -1,21 +1,22 @@
 // Displays the historical high score
 // to be used at the beginning
 function initiateHighScore() {
-  // Check localStorage and if there get the highest score
-  let highScoreBegin = localStorage.getItem('highScore') ? JSON.parse(localStorage.getItem('highScore'))[2] : 0;
+    // Check localStorage and if there get the highest score
+    let highScoreBegin = localStorage.getItem('highScore') ? JSON.parse(localStorage.getItem('highScore'))[2] : 0;
 
-  // get the current high score
-  let currentHighScore = Number(document.getElementById('result-highscore').innerHTML);
+    // get the current high score
+    let currentHighScore = Number(document.getElementById('result-highscore').innerHTML);
 
-  // If the highScore is there and it's bigger than the current one set the current score
-  // as the new high score.
-  if (highScoreBegin && highScoreBegin > currentHighScore) {
-    document.getElementById('result-highscore').innerHTML = highScoreBegin;
-  }
+    // If the highScore is there and it's bigger than the current one set the current score
+    // as the new high score.
+    if (highScoreBegin && highScoreBegin > currentHighScore) {
+        document.getElementById('result-highscore').innerHTML = highScoreBegin;
+    }
 }
 // Call this function when page begins to ensure scores are started at beginning of game
 initiateHighScore();
 
+// Starts game when button clicked.
 function startGame() {
     // Ensure previous game's comments are not showing at start of new turn
     document.querySelector('.wrong').style.display = 'none';
@@ -26,11 +27,11 @@ function startGame() {
 
     // Create a random list of number and add in the array
     let turn = Number(document.getElementById("turn").innerHTML);
-    numbers =[];
+    numbers = [];
     for (i = 0; i < turn; i++) {
         let randomNumber = Math.floor(Math.random() * 9);
         // Avoid the same number
-        if(numbers.includes(randomNumber)) {
+        if (numbers.includes(randomNumber)) {
             i--;
         } else {
             numbers.push(randomNumber);
@@ -40,14 +41,15 @@ function startGame() {
 
     // Computer shows light
     showLights(0, turn);
-    
+
     // Player turn
-    if(document.getElementById("addListenerFlag").innerHTML == "true") {
+    if (document.getElementById("addListenerFlag").innerHTML == "true") {
         playerFunctionality(turn);
     }
 
 }
 
+// human player interaction
 function playerFunctionality(turn) {
     // Get all squares
     let squares = document.querySelectorAll(".square-3x3");
@@ -56,10 +58,10 @@ function playerFunctionality(turn) {
         element.addEventListener("click", () => {
             // Check if player choice is correct
             if (Number(element.id) == numbers[0]) {
-                numbers.shift(); 
+                numbers.shift();
                 // If player choices are all correct
-                if(numbers.length == 0) {
-  
+                if (numbers.length == 0) {
+
                     // Increase score 
                     let resultScore = Number(document.getElementById("result-score").innerHTML);
                     document.getElementById("result-score").innerHTML = resultScore + 1;
@@ -80,14 +82,14 @@ function playerFunctionality(turn) {
 
                 // Get the current total high score 
                 let currentHighScore = Number(document.getElementById("result-highscore").innerHTML);
-                
+
                 // Compare the current game's score with the total high score and if the
                 // Current game's score is bigger than the current highScore make the current
                 // Score the new total high score
-                if(resultScore > currentHighScore) {
+                if (resultScore > currentHighScore) {
                     document.getElementById("result-highscore").innerHTML = resultScore;
                     // use function to set up the new highscore in localStorage
-                    setAllHighScores(resultScore);  
+                    setAllHighScores(resultScore);
                 }
 
                 // Show wrong message if player fails
@@ -105,6 +107,10 @@ function playerFunctionality(turn) {
                 // Show the current score 
                 document.getElementById("score").style.display = "block";
 
+                // Ensure the turn goes back to 2 for the click events section
+                // so that when game is restarted after a fail it begins with just two lights again.
+                turn = 2;
+
             }
         });
     }
@@ -118,7 +124,7 @@ function showLights(count, turn) {
     document.getElementById(numbers[count].toString()).style.backgroundColor = "red";
     i = count;
     // Make light wait 1 second before dissapearing 
-    setTimeout(function() {
+    setTimeout(function () {
         document.getElementById(numbers[i].toString()).style.backgroundColor = "black";
         i++;
         if (i < turn) {
