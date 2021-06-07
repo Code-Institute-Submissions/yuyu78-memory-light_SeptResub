@@ -36,7 +36,6 @@ function startGame() {
         } else {
             numbers.push(randomNumber);
         }
-        console.log(numbers);
     }
 
     // Computer shows light
