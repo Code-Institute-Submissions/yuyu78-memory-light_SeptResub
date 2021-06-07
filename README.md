@@ -37,13 +37,13 @@ The goal of this memory game is to repeat and click the sequence of light that t
 #### The goal & need of the player:
 **Goal**:
 * Enjoy the game
-* Have clear information of rule
+* Have clear information about the rule
 * Succeed the sequence of each round as much as they can.
 * Able to play on a different device 
 
 **Need**:
-* to understand easily the game
-* play with easy and good interaction
+* To understand easily the game
+* Play with easy and good interaction
 * Good and simple visual of the game 
 * Able to contact the business 
 
@@ -89,7 +89,7 @@ On the right of the navbar, the icon sound will allow to turn on or off the soun
 
 ##### Features Left to Implement  
 Due to the lack of time, there are many features I couldn't implement. 
-* For the moment, the game is a grid 3 X 3. Add different levels with a different grid to vary the difficulty:  2 X 2  4 X 4. 
+* For the moment, the game is a grid 3 X 3. Add different levels with a different grid to vary the difficulty:  2 X 2 and  4 X 4. 
 * Add javascript in the contact form.
 * Add stats board displaying the three highest score of the player
 * Add option to use the timer so it will increase the difficulty of the game
@@ -98,15 +98,12 @@ Due to the lack of time, there are many features I couldn't implement.
 
 ### Structure plane <a name="structure-plane"></a>
 ---
-* When the player will open the game, the "play" page will be shown. It will display 3 different pages on the same "play" section:  
-    - The first page is the option to click on “play “and “instruction”.  
-    - If the user clicks on the button play, it will show 3 grid options: 2 X 2, 3 X 3, 4 X 4.  
-    - After choosing one of those options, it will show the page to allow the user to play the game. 
-
-    If the user clicks on “instruction”, it will direct to the instruction page.
+* When the player will open the game, it will show the logo and underneath, two buttons: 
+    * The button play to direct to the game 
+    * The button instruction will direct to the instruction page to understand the rule.
 
 * If the player failed, it will show the current score and the high score.  
-The player has the option to play again by clicking the button below.
+The player has the option to play again by clicking the button "Let's start".
 
 * On the score page, it will show the three highest scores of the player. 
 
@@ -120,7 +117,7 @@ The player has the option to play again by clicking the button below.
 
 [Home play page](https://github.com/yuyu78/memory-light/blob/master/wireframe/home%20page%20play.pdf)
 
-[After clicking play button](https://github.com/yuyu78/memory-light/blob/master/wireframe/after%20clicking%20play.pdf)
+[After clicking play button](https://github.com/yuyu78/memory-light/blob/master/wireframe/after%20clicking%20play.pdf) : this will be a feature implement in the future. 
 
 [Start game](https://github.com/yuyu78/memory-light/blob/master/wireframe/start%20game.pdf)
 
@@ -128,7 +125,8 @@ The player has the option to play again by clicking the button below.
 
 [Instruction](https://github.com/yuyu78/memory-light/blob/master/wireframe/instruction.pdf)
 
-[Contact](https://github.com/yuyu78/memory-light/blob/master/wireframe/contact.pdf)
+[Contact](https://github.com/yuyu78/memory-light/blob/master/wireframe/contact.pdf)  
+
 
 ### Surface plane <a name="surface-plane"></a>
 ---
@@ -136,13 +134,12 @@ The player has the option to play again by clicking the button below.
 The main colors of the website are: 
 * Black for the background and font color
 * White for the button color and font color 
-* Red when hovering the button, social media icon, and the color of the light sequence during the game
+* Red when hovering the button, social media icon, menu, name of the game on top-left and the color of the light sequence during the game
 
 Those colors are chosen to make a contrast between colors and make the game more visible, easier to play. 
 
 #### Typography 
-* **Play** in all the pages 
-The reason for this font family is the form of this typography is straight and ideal for a game app.
+* **Play** in all the pages. The reason for this font family is the form of this typography is straight and ideal for a game app.
 
 ---
 ## Technologies Used <a name="technologies-used"></a>
@@ -166,6 +163,7 @@ The reason for this font family is the form of this typography is straight and i
 * **Google Chrome Dev tools**
 * [HTML Validator](https://validator.w3.org/)
 * [CSS Validator](https://jigsaw.w3.org/css-validator/)
+* [Jshint](https://jshint.com/)
 * [Grammarly](https://app.grammarly.com/)
 * [Stack Overflow](https://stackoverflow.com/)
 
@@ -193,7 +191,7 @@ The reason for this font family is the form of this typography is straight and i
     * The player can click on the first page the instruction button or the navbar before playing.  
     * The explanation is simple and clear. At the end of the instruction, the player can click on the button "play" to start the game. 
 
-3. **As a first-time player, I want a good and simple visual so it makes the game more enjoyable**
+3. **As a first-time player, I want a good and simple visual so it makes the game more enjoyable**  
     The design of the game is very simple. 
     * The background is black and the grid, font color are white so it gives a great contrast between colors and makes the visual better.    
     * When the user plays the game, it will display a sequence of red color. A flashy red color is chosen to also give a good contrast.
@@ -202,7 +200,7 @@ The reason for this font family is the form of this typography is straight and i
     The sound effect is a feature Left to Implement in the future, for the moment, there is no sound in the game.  
 
 5. **As a first-time player, I want to play the game with good interaction, no slowness with quick loading**
-    * When the user hovers all the buttons, including the social media link, the color will turn red.
+    * When the user hovers all the buttons, including the social media link, menue and name of the game, the color will turn red.
     * Every time the user succeeds in the game, it will add one point in the current score and will appear a correct message in green color "Correct! Click the button again to continue". 
     * If the user failed the game, it will reset the current score to 0 and will appear a message in red color "Wrong! Click the button to Start Again". 
 
@@ -265,7 +263,7 @@ This solution was found in stack overflow [here](https://stackoverflow.com/quest
 
 * Checked the validity of the code with HTML Markup Validation Service and CSS Validation Service and there were no errors.  However, in JS hint. there are several error : 
     * An error message 	"**'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).**".  
-    I checked in [stack overflow](https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const) so just need to add comment **/*jshint esversion: 6 */ ** on the top of the JS file. 
+    I checked in [stack overflow](https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const) so just need to add comment /*jshint esversion: 6 */  on the top of the JS file. 
     * An error saying that the variable "**numbers**" is not defined, but if I defined this variable, the code is not working. 
 
 ---
