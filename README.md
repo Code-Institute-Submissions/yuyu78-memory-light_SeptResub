@@ -73,16 +73,22 @@ The goal of this memory game is to repeat and click the sequence of light that t
 ### Scope plane <a name="scope-plane"></a>
 ---
 #### Features
+
+##### Existing features
 * A navigation bar in all the pages with : **Play, Instruction, score, contact**.  
 On the mobile device, the hamburger menu will be used with the toggling behavior. 
 On the right of the navbar, the icon sound will allow to turn on or off the sound.
 * The footer will be displayed in all the page with the copy right, the icon github which will direct to the github page of the project and the social media link.
-* The player can choose between three differents grid to vary the level of difficulty:  2 X 2, 3 X 3, 4 X 4.  
 * Each time the user succeed a round, one light will be added to the sequence to make the game more complex and difficult to memorize. 
-* If the user failed, it will show the score and the high score of the user.
-* In the page of the score, it will show the best score of the user to check the progress.
 * In the instruction page, it explains all the information of the game and the user can click on play button.
 * In the contact page, the user can submit a form for any questions, feedback or suggestion.
+
+##### Features Left to Implement
+* For the moment, the game is a grid 3 X 3. Add different level with different grid to vary the difficulty :  2 X 2  4 X 4. 
+* Add javascript in the contact form, due to the lack of time, I couldn't finish.
+* Add stats board displaying the three highest score of the player
+* Add option to use the timer so it will increase the difficulty of the game
+* Add sounds effects
 
 
 ### Structure plane <a name="structure-plane"></a>
@@ -122,11 +128,91 @@ The player has the option to play again by clicling the button below the score.
 [Contact](https://github.com/yuyu78/memory-light/blob/master/wireframe/contact.pdf)
 
 ### Surface plane <a name="surface-plane"></a>
+---
+#### Color Scheme
+The main colors of the website are: 
+* Black for the background and font color
+* White for the button color and font color 
+* Red when hover the button, social media icon and the color of the light sequence during the game
 
+Those colors are chosen to make a contrast between color and make the game more visible, easier to play. 
+
+#### Typography 
+* **Play** in all the pages 
+The reason od the choice is the form of this typography is straight and ideal for game app.
+
+---
 ## Technologies Used <a name="technologies-used"></a>
+---
+
+### Languages
+* HTML5
+* CSS
+* Javascript, jQuery
+
+## Coding library and others technologies 
+* [Jquery](https://jquery.com/)
+* [Bootstrap](https://getbootstrap.com/) version 4.3.1
+* [Google fonts](https://fonts.google.com/)
+* [Fontawesome](https://fontawesome.com/)
+* [Git](https://git-scm.com/)
+* [Github](https://github.com/)
+* [Gitpod](https://www.gitpod.io/)
+* [Balsamiq](https://balsamiq.com/wireframes/)
+* [Google fonts](https://fonts.google.com/)
+* **Google Chrome Dev tools**
+* [HTML Validator](https://validator.w3.org/)
+* [CSS Validator](https://jigsaw.w3.org/css-validator/)
+* [Grammarly](https://app.grammarly.com/)
+* [Stack Overflow](https://stackoverflow.com/)
+
 
 ## Testing <a name="testing"></a>
+---
+### Devices tested
 
+## Testing User Stories
+1. I want to be able to play the game on different device  
+
+    **Devices tested during the project**: 
+* Desktop
+* Moto G4 
+* Galaxy S5
+* Pixel 2
+* Pixel 2Xl
+* Iphone 5/SE 
+* Iphone 6/7/8
+* Iphone x
+* Ipad 
+* Ipad Pro
+* Surface Duo
+
+2. I want to access to the instruction and have an easy understanding of the rule
+    * The playe can click on the first page the instruction button or on the navbar before playing.  
+    The explanation is simple and clear. At the end of the instruction, the player can click on the button "play" to start the game. 
+
+3. I want a good and simple visual so it makes the game more enjoyable
+    The concept and the visual of the game is very simple.
 ## Deployment <a name="deployment"></a>
+---
+Gitpod was used to develop the project and deployed through Github Pages.   
+
+The steps for the deployment of the project:
+
+1. Login to [Github](https://github.com/)  
+2. Click on the green and white icon on top-right and select "Your repositories"  
+3. From the list of the repositories, select **memory-light**  
+4. Click on **Settings**  on the right of the menu items  
+5. Scroll down to the **GitHub Pages**  
+6. Under source in the dropdown menu, select **Master**
+7. On the right, select the folder **/(root)**  
+8. Click **Save** and the page will automatically refresh  
+9. Scroll back again to the **GitHub Pages** and click on the link to the deployed site
+
+### To run the project locally  
+
+1. Go to the repository [memory-light](https://github.com/yuyu78/memory-light)  
+2. Click to the green button **Code** and select **Download ZIP**
+3. Extract the file downloaded to run the project locally
 
 ## Credits <a name="credits"></a>
