@@ -1,7 +1,38 @@
 # TESTING Memory Light
 [README file](https://github.com/yuyu78/memory-light/blob/master/README.md)   
 
-### Testing User Stories
+## Table of contents
+1. [Testing site responsiveness](#testing-site-responsiveness)   
+
+2. [Browsers tested](#browsers-tested)   
+
+3. [Testing User Stories](#testing-user-stories)  
+
+4. [Manual Testing](#manual-testing)  
+
+5. [Bugs](#bugs)  
+
+6. [Validators](#validators)
+
+7. [Lighthouse Testing](#lighthouse-testing)
+
+## Testing site responsiveness <a name="testing-site-responsiveness"></a>
+**Devices tested during the project**: 
+    * Desktop
+    * Moto G4 
+    * Galaxy S5
+    * Pixel 2
+    * Pixel 2Xl
+    * Iphone 5/SE 
+    * Iphone 6/7/8
+    * Iphone x
+    * Ipad 
+    * Ipad Pro
+    * Surface Duo
+
+## Browsers tested<a name="browsers-tested"></a>
+
+## Testing User Stories <a name="testing-user-stories"></a>
 1. **As a first-time player, I want to be able to play the game on different device**
 
     **Devices tested during the project**: 
@@ -51,8 +82,9 @@
     I didn't have time to work the contact form on Javascript so for the moment, if the player clicks on the submit button, it will show an error message.  
     I will be a future feature to implement. 
 
-### Manual testing
+## Manual testing <a name="manual-testing"></a>
 
+## Bugs <a name="bugs"></a>
 * Issue with the footer: it doesn´t stay on the bottom of the page.   
 ![issue space bottom footer](https://user-images.githubusercontent.com/76018052/121042792-eb8aa880-c7ab-11eb-84d0-812ea2f4dae3.PNG)  
 
@@ -95,3 +127,11 @@ This solution was found in stack overflow [here](https://stackoverflow.com/quest
     * An error message 	"**'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).**".  
     I checked in [stack overflow](https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const) so just need to add comment /*jshint esversion: 6 */  on the top of the JS file. 
     * An error saying that the variable "**numbers**" is not defined, but if I defined this variable, the code is not working. 
+
+## Validators <a name="validators"></a>
+
+### HTML and CSS validators 
+
+### Javascript   
+
+## Lighthouse testing <a name="lighthouse-testing"></a>  
