@@ -170,7 +170,7 @@ Those colors are chosen to make a contrast between colors and make the game more
 
 ## Testing <a name="testing"></a>
 ---
-The testing process can be found [here]()
+The testing process can be found [here](https://github.com/yuyu78/memory-light/blob/master/TESTING.md)
 
 ---
 ## Deployment <a name="deployment"></a>
