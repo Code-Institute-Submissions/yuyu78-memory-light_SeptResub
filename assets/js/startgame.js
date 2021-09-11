@@ -39,6 +39,8 @@ function startGame() {
         }
     }
 
+    document.querySelector(".grid-3x3").style.pointerEvents = "none";
+
     // Computer shows light
     showLights(0, turn);
 
@@ -62,15 +64,15 @@ function playerFunctionality(turn) {
                 // If player choices are all correct
                 if (numbers.length == 0) {
 
-                    // Increase score 
+                    // Increase score
                     let resultScore = Number(document.getElementById("result-score").innerHTML);
                     document.getElementById("result-score").innerHTML = resultScore + 1;
 
-                    // New turn and increase difficulty one by one 
+                    // New turn and increase difficulty one by one
                     turn = turn + 1;
                     document.getElementById("turn").innerHTML = turn.toString();
 
-                    // Show correct message 
+                    // Show correct message
                     document.querySelector(".correct").style.display = "block";
 
                     document.getElementById("button-start").style.cssText = "display: flex; justify-content: center";
@@ -80,7 +82,7 @@ function playerFunctionality(turn) {
                 let resultScore = Number(document.getElementById("result-score").innerHTML);
                 Number(document.getElementById("result-score").innerHTML);
 
-                // Get the current total high score 
+                // Get the current total high score
                 let currentHighScore = Number(document.getElementById("result-highscore").innerHTML);
 
                 // Compare the current game's score with the total high score and if the
@@ -98,13 +100,13 @@ function playerFunctionality(turn) {
                 // Show start button after wrong to allow to restart the game
                 document.getElementById("button-start").style.cssText = "display: flex; justify-content: center";
 
-                // Ensure the turn goes back to 0 
+                // Ensure the turn goes back to 0
                 document.getElementById('turn').innerHTML = '2';
 
                 // Reset the current score to 0
                 document.getElementById("result-score").innerHTML = 0;
 
-                // Show the current score 
+                // Show the current score
                 document.getElementById("score").style.display = "block";
 
                 // Ensure the turn goes back to 2 for the click events section
@@ -118,18 +120,21 @@ function playerFunctionality(turn) {
     document.getElementById("addListenerFlag").innerHTML = "false";
 }
 
-// Computer choice 
+// Computer choice
 function showLights(count, turn) {
     // Show red light
     document.getElementById(numbers[count].toString()).style.backgroundColor = "red";
     i = count;
-    // Make light wait 1 second before dissapearing 
+    // Make light wait 1 second before dissapearing
     setTimeout(function () {
         document.getElementById(numbers[i].toString()).style.backgroundColor = "black";
         i++;
         if (i < turn) {
             // Display next light
             showLights(i, turn);
+        } else {
+            // If player turn, make the tiles clickable again
+             document.querySelector(".grid-3x3").style.pointerEvents = "auto";
         }
     }, 1000);
 }
