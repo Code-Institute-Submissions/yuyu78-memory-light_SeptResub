@@ -58,16 +58,17 @@ function playerFunctionality(turn) {
     // Add click functionality for each square
     for (const element of squares) {
         element.addEventListener("click", () => {
+            // After the player clicks a square, it change the background color for 300ms
             element.style.backgroundColor = "#f37979ab";
             setTimeout(() => {
-                element.style.backgroundColor = "black";  
+            element.style.backgroundColor = "black";  
             }, 300);
             // Check if player choice is correct
             if (Number(element.id) == numbers[0]) {
                 numbers.shift();
                 // If player choices are all correct
                 if (numbers.length == 0) {
-
+                    flashGreen();
                     // Increase score
                     let resultScore = Number(document.getElementById("result-score").innerHTML);
                     document.getElementById("result-score").innerHTML = resultScore + 1;
@@ -123,6 +124,17 @@ function playerFunctionality(turn) {
     // To ensure that the click event listeners are only added once to each button and not repeatedly
     document.getElementById("addListenerFlag").innerHTML = "false";
 }
+
+// Flash green when player is correct
+function flashGreen() {
+    let squares = document.querySelectorAll(".square-3x3");
+    for (const element of squares) {
+            element.style.backgroundColor = "green";
+            setTimeout(() => {
+                element.style.backgroundColor = "black";
+            }, 320);
+        }
+    }
 
 // Computer choice
 function showLights(count, turn) {
