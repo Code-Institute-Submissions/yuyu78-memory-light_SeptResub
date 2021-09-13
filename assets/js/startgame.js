@@ -79,7 +79,7 @@ function playerFunctionality(turn) {
 
                     setTimeout(() => {
                         startGame(); 
-                    }, 1000);
+                    }, 600);
                 }
             } else {
                 // Get the current game's score
