@@ -129,12 +129,12 @@ function playerFunctionality(turn) {
 function flashGreen() {
     let squares = document.querySelectorAll(".square-3x3");
     for (const element of squares) {
-            element.style.backgroundColor = "green";
-            setTimeout(() => {
-                element.style.backgroundColor = "black";
-            }, 320);
-        }
+        element.style.backgroundColor = "green";
+        setTimeout(() => {
+            element.style.backgroundColor = "black";
+        }, 320);
     }
+}
 
 // Computer choice
 function showLights(count, turn) {

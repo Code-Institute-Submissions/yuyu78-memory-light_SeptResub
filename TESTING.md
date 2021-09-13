@@ -129,6 +129,8 @@ This solution was found in stack overflow [here](https://stackoverflow.com/quest
     To make the tiles clickable when it is the player turn, put the pointerEvents to "auto"
 ![pointer event auto](https://user-images.githubusercontent.com/76018052/132959372-006578ff-2152-4f13-9942-1e217b6aafb1.PNG)
 
+* From the advise of the tutor, to show a green flash light when the player turn is correct, I added a separate *function flashGreen()* and call inside the *function playerFunctionality(turn)*
+
 ## Validators <a name="validators"></a>
 
 ### HTML and CSS validators 
