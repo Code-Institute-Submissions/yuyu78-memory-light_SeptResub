@@ -58,6 +58,10 @@ function playerFunctionality(turn) {
     // Add click functionality for each square
     for (const element of squares) {
         element.addEventListener("click", () => {
+            element.style.backgroundColor = "#f37979ab";
+            setTimeout(() => {
+                element.style.backgroundColor = "black";  
+            }, 300);
             // Check if player choice is correct
             if (Number(element.id) == numbers[0]) {
                 numbers.shift();
