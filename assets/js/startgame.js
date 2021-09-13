@@ -77,10 +77,9 @@ function playerFunctionality(turn) {
                     turn = turn + 1;
                     document.getElementById("turn").innerHTML = turn.toString();
 
-                    // Show correct message
-                    document.querySelector(".correct").style.display = "block";
-
-                    document.getElementById("button-start").style.cssText = "display: flex; justify-content: center";
+                    setTimeout(() => {
+                        startGame(); 
+                    }, 1000);
                 }
             } else {
                 // Get the current game's score
