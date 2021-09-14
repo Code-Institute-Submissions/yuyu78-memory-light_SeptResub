@@ -25,7 +25,7 @@ e.[Surface plane](#surface-plane)
 ## UX <a name="ux"></a>
 
 ### Strategy plane <a name="strategy-plane"></a>
----
+
 The goal of this memory game is to repeat and click the sequence of light that the game will generate. After each round, one more light will be added to the sequence so it will become progressively longer and more complex which makes it harder to remember, the objective is to succeed the maximum of sequences as the user can.
 
 #### The game is building for: 
@@ -60,6 +60,7 @@ The goal of this memory game is to repeat and click the sequence of light that t
 * Make simple and good visual to make the interaction easy
 
 #### User Stories
+
 ##### As a first-time player
 * I want to be able to play the game on a different device
 * I want to access the instruction and have an easy understanding of the rule 
@@ -75,7 +76,7 @@ The goal of this memory game is to repeat and click the sequence of light that t
 
 
 ### Scope plane <a name="scope-plane"></a>
----
+
 #### Features
 
 ##### Existing features
@@ -97,7 +98,7 @@ Due to the lack of time, there are many features I couldn't implement.
 
 
 ### Structure plane <a name="structure-plane"></a>
----
+
 * When the player will open the game, it will show the logo and underneath, two buttons: 
     * The button play to direct to the game 
     * The button instruction will direct to the instruction page to understand the rule.
@@ -112,7 +113,7 @@ The player has the option to play again by clicking the button "Let's start".
 * On the contact page, the player has to fill out the name, email address, and the message to add any question, suggestion, or feedback.
 
 ### Skeleton plane <a name="skeleton-plane"></a>
----
+
 #### Wireframe
 
 [Home play page](https://github.com/yuyu78/memory-light/blob/master/wireframe/home%20page%20play.pdf)
@@ -129,7 +130,7 @@ The player has the option to play again by clicking the button "Let's start".
 
 
 ### Surface plane <a name="surface-plane"></a>
----
+
 #### Color Scheme
 The main colors of the website are: 
 * Black for the background and font color
@@ -141,9 +142,7 @@ Those colors are chosen to make a contrast between colors and make the game more
 #### Typography 
 * **Play** in all the pages. The reason for this font family is the form of this typography is straight and ideal for a game app.
 
----
 ## Technologies Used <a name="technologies-used"></a>
----
 
 ### Languages
 * HTML5
@@ -167,14 +166,11 @@ Those colors are chosen to make a contrast between colors and make the game more
 * [Grammarly](https://app.grammarly.com/)
 * [Stack Overflow](https://stackoverflow.com/)
 
-
 ## Testing <a name="testing"></a>
----
+
 The testing process can be found [here](https://github.com/yuyu78/memory-light/blob/master/TESTING.md)
 
----
 ## Deployment <a name="deployment"></a>
----
 
 Gitpod was used to develop the project and deployed through Github Pages.   
 
@@ -198,9 +194,17 @@ The steps for the deployment of the project:
 3. Extract the file downloaded to run the project locally
 
 ## Credits & Acknowledgments<a name="credits"></a>
----
+
+### Inspiration
 
 * The concept of the game is inspired by the game Simon which is mentioned in the Assessment Handbook of Code Institute. 
+
+### Code
+
+* For the contact form with the email js, it is inpired from the Code institute course  under ***Interactive Frontend Developement > Putting it all together > Sending Emails Using EmailJS***
+
+### Acknowledgment
+
 * Thank you to my mentor Miguel for all the support and advice for my project
 * All the tutor of Code Institute
 * Code Institute Slack community
