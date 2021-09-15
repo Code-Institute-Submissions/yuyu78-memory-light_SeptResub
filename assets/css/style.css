@@ -179,7 +179,7 @@ footer {
     /*margin-top: 8rem;*/
 }
 
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 320px) {
     .grid-logo {
         width: 45%;
     }
