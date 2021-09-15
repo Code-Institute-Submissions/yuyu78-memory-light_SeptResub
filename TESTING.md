@@ -2,53 +2,23 @@
 [README file](https://github.com/yuyu78/memory-light/blob/master/README.md)   
 
 ## Table of contents
-1. [Testing site responsiveness](#testing-site-responsiveness)   
 
-2. [Browsers tested](#browsers-tested)   
+1. [Testing User Stories](#testing-user-stories)  
 
-3. [Testing User Stories](#testing-user-stories)  
+2. [Manual Testing](#manual-testing)  
 
-4. [Manual Testing](#manual-testing)  
+3. [Bugs](#bugs)  
 
-5. [Bugs](#bugs)  
+4. [Validators](#validators)
 
-6. [Validators](#validators)
-
-7. [Lighthouse Testing](#lighthouse-testing)
-
-## Testing site responsiveness <a name="testing-site-responsiveness"></a>
-**Devices tested during the project**: 
-    * Desktop
-    * Moto G4 
-    * Galaxy S5
-    * Pixel 2
-    * Pixel 2Xl
-    * Iphone 5/SE 
-    * Iphone 6/7/8
-    * Iphone x
-    * Ipad 
-    * Ipad Pro
-    * Surface Duo
-
-## Browsers tested<a name="browsers-tested"></a>
+5. [Lighthouse Testing](#lighthouse-testing)
 
 ## Testing User Stories <a name="testing-user-stories"></a>
-1. **As a first-time player, I want to be able to play the game on different device**
 
-    **Devices tested during the project**: 
-    * Desktop
-    * Moto G4 
-    * Galaxy S5
-    * Pixel 2
-    * Pixel 2Xl
-    * Iphone 5/SE 
-    * Iphone 6/7/8
-    * Iphone x
-    * Ipad 
-    * Ipad Pro
-    * Surface Duo
+1. **As a first-time player, I want to be able to play the game on different device**  
+    Used the site https://responsivedesignchecker.com/ to check if the website is responsive in all devices.  
 
-2. **As a first-time player, I want to access the instruction and have an easy understanding of the rule**  
+2. **As a first-time player, I want to access the instruction so I can have an easy understanding of the rule**  
     * The player can click on the first page the instruction button or the navbar before playing.  
     * The explanation is simple and clear. At the end of the instruction, the player can click on the button "play" to start the game. 
 
@@ -57,30 +27,28 @@
     * The background is black and the grid, font color are white so it gives a great contrast between colors and makes the visual better.    
     * When the user plays the game, it will display a sequence of red color. A flashy red color is chosen to also give a good contrast.
 
-4. **As a first-time player, I want to be able to turn off the sound if I am playing in a quiet place**  
+4. **As a first-time player, I want to be able to turn off the sound so I can play in a quiet place**  
     The sound effect is a feature Left to Implement in the future, for the moment, there is no sound in the game.  
 
-5. **As a first-time player, I want to play the game with good interaction, no slowness with quick loading**
+5. **As a first-time player, I want to play the game with good interaction so there is no slowness and the page will load quickly**
     * When the user hovers all the buttons, including the social media link, menue and name of the game, the color will turn red.
     * Every time the user succeeds in the game, it will add one point in the current score and will appear a correct message in green color "Correct! Click the button again to continue". 
     * If the user failed the game, it will reset the current score to 0 and will appear a message in red color "Wrong! Click the button to Start Again". 
 
-6. **As a returning player, I want to improve my memory skills**
+6. **As a returning player, I want the game become mmore difficult so I can improve my memory skills**
     * The game will start with a sequence of two lights. Each time the player succeeds the round, one more light will be added to the sequence so it will become progressively longer and more difficult to remember.  
     This is a good exercise to improve memory skills. 
 
-7. **As a returning player, I want to save my high score on a stats board so that I can check my progress**
+7. **As a returning player, I want to save my high score on a stats board so I can check my progress**
     * Due to the lack of time, the score page which will show the three highest scores of the player will be a feature implemented in the future.  
     For the moment, only one high score will be shown on the page before the player starts the game, below the grid with the current score. 
     * The high score will be saved in the storage so if the player reloads the page, it will still show the high score. 
 
-8. **As a returning player, I want to select a different grid**
+8. **As a returning player, I want to select a different grid so I can develop my memory skills**
     *  This is a future feature to implement the grids of 2 X 2 and 4 X 4 so that the player can vary the level of difficulty.
 
-9. **As a returning player, I want to contact the business if I have any suggestion, feedback related to the game**
-    * The player can access the contact page to fill the form. Al the inputs are required to submit the form.
-    I didn't have time to work the contact form on Javascript so for the moment, if the player clicks on the submit button, it will show an error message.  
-    I will be a future feature to implement. 
+9. **As a returning player, I want to contact the business so I can ask question or give feedback**
+    * The player can access the contact page to fill the form. All the inputs are required to submit the form.
 
 ## Manual testing <a name="manual-testing"></a>
 

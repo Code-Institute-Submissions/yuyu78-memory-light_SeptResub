@@ -63,16 +63,16 @@ The goal of this memory game is to repeat and click the sequence of light that t
 
 ##### As a first-time player
 * I want to be able to play the game on a different device
-* I want to access the instruction and have an easy understanding of the rule 
-* I want a good and simple visual so it makes the game more enjoyable 
-* I want to be able to turn off the sound if I am playing in a quiet place
-* I want to play the game with good interaction, no slowness with quick loading  
+* I want to access the instruction so I can have an easy understanding of the rule
+* I want a good and simple visual so it makes the game more enjoyable
+* I want to be able to turn off the sound so I can play in a quiet place
+* I want to play the game with good interaction so there is no slowness and the page will load quickly
 
 ##### As a  returning player: 
-* I want to improve my memory skills
-* I want to save my high score on a stats board so that I can check my progress 
-* I want to select a different level of grid 
-* I want to contact the business if I have any suggestion, feedback related to the game
+* I want the game become mmore difficult so I can improve my memory skills
+* I want to save my high score on a stats board so I can check my progress
+* I want to select a different grid so I can develop my memory skills
+* I want to contact the business so I can ask question or give feedback
 
 
 ### Scope plane <a name="scope-plane"></a>
