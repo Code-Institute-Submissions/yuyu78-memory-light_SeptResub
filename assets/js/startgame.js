@@ -3,7 +3,7 @@
 // to be used at the beginning
 function initiateHighScore() {
     // Check localStorage and if there get the highest score
-    let highScoreBegin = localStorage.getItem('highScore') ? JSON.parse(localStorage.getItem('highScore'))[2] : 0;
+    let highScoreBegin = localStorage.getItem('highScore') !== null ? JSON.parse(localStorage.getItem('highScore'))[2] : 0;
 
     // get the current high score
     let currentHighScore = Number(document.getElementById('result-highscore').innerHTML);
@@ -94,9 +94,10 @@ function playerFunctionality(turn) {
                 // Score the new total high score
                 if (resultScore > currentHighScore) {
                     document.getElementById("result-highscore").innerHTML = resultScore;
-                    // use function to set up the new highscore in localStorage
-                    setAllHighScores(resultScore);
+                    
                 }
+                // use function to set up the new highscore in localStorage
+                setAllHighScores(resultScore);
 
                 // Show wrong message if player fails
                 document.querySelector(".wrong").style.display = "block";
