@@ -16,7 +16,11 @@
 ## Testing User Stories <a name="testing-user-stories"></a>
 
 1. **As a first-time player, I want to be able to play the game on different device**  
-    Used the site https://responsivedesignchecker.com/ to check if the website is responsive in all devices.  
+    * Used the site https://responsivedesignchecker.com/ to check if the website is responsive in all devices.
+    * Browsers tested during the project:   
+        * Chrome
+        * Edge
+        * Firefox    
 
 2. **As a first-time player, I want to access the instruction so I can have an easy understanding of the rule**  
     * The player can click on the first page the instruction button or the navbar before playing.  
@@ -51,6 +55,56 @@
     * The player can access the contact page to fill the form. All the inputs are required to submit the form.
 
 ## Manual testing <a name="manual-testing"></a>
+
+### Navigation bar 
+1. Check if all the links in the navigation bar will change in red color when hover
+2. Check if all the links direct to the correct page:  
+
+| Link | Testing | Result |  
+| --- | --- | --- |
+| Memory Light| Check if directs to the homepage | OK | 
+| Play | Check if directs to the homepage | OK | 
+| Instruction| Check if directs to the instruction page | OK | 
+| Score| Check if direct to the scoreboard page| OK | 
+| Contact| Check if direct to contact page with a form | OK | 
+
+3. Check if on mobile size and Ipad, it collapses to hamburger
+
+### Footer
+1. When hover on the social media links, check if the color changes in red 
+2. Check if all the links direct to the correct social media page
+3. Check if the footer is responsive in all devices
+
+### Homepage (index.html)
+1. Check if the homepage is responsive in all devices
+2. Check if the buttons play and instruction change in red color when hover
+3. Check if the button play directs to the page with the grid to be ready to play (startgame.html)
+4. Check if the button instruction directs to the instruction page
+
+### Startgame.html (after clicking to the button "play" on the homepage)
+1. Check if the page is responsive in all devices
+2. Check if after clicking the button "Let's start", it shows combination of pattern with red light
+3. While the pattern is being showed, check if the tiles are not clickable so that there is no bug 
+4. Check if the player clicks to the correct tiles, the current score increases
+5. Check if the player clickS to the incorrect tiles, it shows a message in red "Wrong! Click button to Start Again" and the current score reset to 0
+6. If I reload the page, check if it keeps the highscore
+
+### Instruction page
+1. Check if the page is responsive in all devices
+2. Check if the button "Play now" changes in red color when hover
+3. Check if after clicking the button "Play now", it direct to the page startgame.html with the grid
+
+### Score page
+1. Check if the page is responsive in all devices
+2. Check if first highest highscore in the score page is the same in the startgame.html page under the grid
+
+### Contact page
+1. Check if the page is responsive in all devices
+2. Check if the button "Submit" changes in red color when hover
+3. Check if the user doesn´t fill in all the input, it appears a message to fill in the field
+4. After submitting the form, check if there is a confirmation message "Request submitted!"
+5. Check in my personal email if I receive the request from the user
+
 
 ## Bugs <a name="bugs"></a>
 * Issue with the footer: it doesn´t stay on the bottom of the page.   
@@ -108,6 +162,7 @@ Checked the validity of the code with HTML Markup Validation Service and CSS Val
 in JS hint. there are several error : 
     * An error message 	"**'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).**".  
     I checked in [stack overflow](https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const) so just need to add comment /*jshint esversion: 6 */  on the top of the JS file. 
-    * An error saying that the variable "**numbers**" is not defined, but if I defined this variable, the code is not working.    
+    * An error saying that the variable "**numbers**" is not defined, but if I defined this variable, the code is not working.  
+    * An error saying that the variable "emailjs" is undefined, but this is part of the email js documentation.
 
 ## Lighthouse testing <a name="lighthouse-testing"></a>  
