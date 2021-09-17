@@ -373,7 +373,7 @@ table.center {
     }
 }
 
-.score-result {
+#scoreboard td {
     width: 65%;
 }
 
