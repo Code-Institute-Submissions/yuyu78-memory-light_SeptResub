@@ -159,6 +159,8 @@ Those colors are chosen to make a contrast between colors and make the game more
 * [Gitpod](https://www.gitpod.io/)
 * [Balsamiq](https://balsamiq.com/wireframes/)
 * [Google fonts](https://fonts.google.com/)
+* [Sweetalert2](https://sweetalert2.github.io/)
+
 * **Google Chrome Dev tools**
 * [HTML Validator](https://validator.w3.org/)
 * [CSS Validator](https://jigsaw.w3.org/css-validator/)
@@ -202,6 +204,7 @@ The steps for the deployment of the project:
 ### Code
 
 * For the contact form with the email js, it is inpired from the Code institute course  under ***Interactive Frontend Developement > Putting it all together > Sending Emails Using EmailJS***
+* For the alert message after submitting the form, I used [Sweetalert2](https://sweetalert2.github.io/)
 
 ### Acknowledgment
 
