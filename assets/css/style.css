@@ -339,6 +339,23 @@ footer {
     }
 }
 
+/*Javascript*/
+#turn, #addListenerFlag {
+    display: none;
+}
+
+.correct {
+    display: none;
+    font-size: 1.5rem;
+    color: #64ff94;
+}
+
+.wrong {
+    display: none;
+    font-size: 1.5rem;
+    color: #f15c5c;
+}
+
 /* ----------------------------------- Score page  */
 
 #margin-score-page {
@@ -425,22 +442,3 @@ form button {
 .modal-body p {
     color: black !important;
 }
-
-/* ----------------------------------- For Javascript*/
-
-#turn, #addListenerFlag {
-    display: none;
-}
-
-.correct {
-    display: none;
-    font-size: 1.5rem;
-    color: #64ff94;
-}
-
-.wrong {
-    display: none;
-    font-size: 1.5rem;
-    color: #f15c5c;
-}
-
