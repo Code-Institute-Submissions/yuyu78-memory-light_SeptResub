@@ -422,6 +422,10 @@ form button {
     }
 }
 
+.modal-body p {
+    color: black !important;
+}
+
 /* ----------------------------------- For Javascript*/
 
 #turn, #addListenerFlag {
@@ -439,3 +443,4 @@ form button {
     font-size: 1.5rem;
     color: #f15c5c;
 }
+

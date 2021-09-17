@@ -70,7 +70,22 @@
         <!--Submit button-->
         <div class="container">
             <div class="row justify-content-center">
-                <button type="submit" class="btn-game">Submit</button>
+                <button type="submit" class="btn-game" data-toggle="modal" data-target="#submitModal">Submit</button>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="submitModal" tabindex="-1" role="dialog" aria-labelledby="submitModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <p>Request submitted!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
             </div>
         </div>
     </form>
@@ -134,7 +149,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
     </script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript" src="assets/js/email.js"></script>
 </body>
 

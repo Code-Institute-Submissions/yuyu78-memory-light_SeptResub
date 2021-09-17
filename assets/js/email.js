@@ -7,10 +7,6 @@ function sendMail(contactForm) {
     .then(
         function(response) {
             console.log("Sucesss", response);
-            swal({
-                title: "Request submitted!",
-                button: "OK!",
-              });
         },
         function(error) {
             console.log("Failed", error);
