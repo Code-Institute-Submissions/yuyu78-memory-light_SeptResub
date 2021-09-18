@@ -15,8 +15,8 @@
 
 ## Testing User Stories <a name="testing-user-stories"></a>
 
-1. **As a first-time player, I want to be able to play the game on different device**  
-    * Used the site https://responsivedesignchecker.com/ to check if the website is responsive in all devices.
+1. **As a first-time player, I want to be able to play the game on different devices**  
+    * Used the site https://responsivedesignchecker.com/ to check if the website is responsive on all devices.
     * Browsers tested during the project:   
         * Chrome
         * Edge
@@ -29,36 +29,36 @@
 3. **As a first-time player, I want a good and simple visual so it makes the game more enjoyable**  
     The design of the game is very simple. 
     * The background is black and the grid, font color are white so it gives a great contrast between colors and makes the visual better.    
-    * When the user plays the game, it will display a sequence of red color. A flashy red color is chosen to also give a good contrast.
+    * When the user plays the game, it will display a sequence of red colors. A flashy red color is chosen to also give a good contrast.
 
 4. **As a first-time player, I want to be able to turn off the sound so I can play in a quiet place**  
     The sound effect is a feature Left to Implement in the future, for the moment, there is no sound in the game.  
 
 5. **As a first-time player, I want to play the game with good interaction so there is no slowness and the page will load quickly**
-    * When the user hovers all the buttons, including the social media link, menue and name of the game, the color will turn red.
-    * Every time the user succeeds in the game, it will add one point in the current score and will appear a correct message in green color "Correct! Click the button again to continue". 
-    * If the user failed the game, it will reset the current score to 0 and will appear a message in red color "Wrong! Click the button to Start Again". 
+    * When the user hovers all the buttons, including the social media link, menu, and name of the game, the color will turn red.
+    * Every time the user succeeds in the game, a green flashlight appears, and the user gets one point in the current score.
+    * If the user loses the game, it reset the current score to 0 and will appear a message in red color "Wrong! Click the button to Start Again".
 
-6. **As a returning player, I want the game become mmore difficult so I can improve my memory skills**
+6. **As a returning player, I want the game to become more difficult so I can improve my memory skills**
     * The game will start with a sequence of two lights. Each time the player succeeds the round, one more light will be added to the sequence so it will become progressively longer and more difficult to remember.  
     This is a good exercise to improve memory skills. 
 
 7. **As a returning player, I want to save my high score on a stats board so I can check my progress**
-    * Due to the lack of time, the score page which will show the three highest scores of the player will be a feature implemented in the future.  
-    For the moment, only one high score will be shown on the page before the player starts the game, below the grid with the current score. 
-    * The high score will be saved in the storage so if the player reloads the page, it will still show the high score. 
+    * On the Score page, the user can check the three highest scores
+    * The high score is saved in the storage so if the player reloads the page, it will still show the high score. 
 
 8. **As a returning player, I want to select a different grid so I can develop my memory skills**
     *  This is a future feature to implement the grids of 2 X 2 and 4 X 4 so that the player can vary the level of difficulty.
 
-9. **As a returning player, I want to contact the business so I can ask question or give feedback**
+9. **As a returning player, I want to contact the business so I can ask a question or give feedback**
     * The player can access the contact page to fill the form. All the inputs are required to submit the form.
+    * When the player submits the form, a message appears "Request submitted" with the button "OK" to go back to the previous form.
 
 ## Manual testing <a name="manual-testing"></a>
 
 ### Navigation bar 
 1. Check if all the links in the navigation bar will change in red color when hover
-2. Check if all the links direct to the correct page:  
+2. Check if all the links are direct to the correct page:  
 
 | Link | Testing | Result |  
 | --- | --- | --- |
@@ -68,43 +68,42 @@
 | Score| Check if direct to the scoreboard page| OK | 
 | Contact| Check if direct to contact page with a form | OK | 
 
-3. Check if on mobile size and Ipad, it collapses to hamburger
+3. Check if, on mobile size and Ipad, it collapses to hamburger
 
 ### Footer
 1. When hover on the social media links, check if the color changes in red 
 2. Check if all the links direct to the correct social media page
-3. Check if the footer is responsive in all devices
+3. Check if the footer is responsive on all devices
 
 ### Homepage (index.html)
-1. Check if the homepage is responsive in all devices
-2. Check if the buttons play and instruction change in red color when hover
+1. Check if the homepage is responsive on all devices
+2. Check if the buttons play and instructions change in red color when hover
 3. Check if the button play directs to the page with the grid to be ready to play (startgame.html)
 4. Check if the button instruction directs to the instruction page
 
 ### Startgame.html (after clicking to the button "play" on the homepage)
-1. Check if the page is responsive in all devices
-2. Check if after clicking the button "Let's start", it shows combination of pattern with red light
-3. While the pattern is being showed, check if the tiles are not clickable so that there is no bug 
+1. Check if the page is responsive on all devices
+2. Check if after clicking the button "Let's start", it shows a combination of patterns with red light
+3. While the pattern is being shown, check if the tiles are not clickable so that there is no bug 
 4. Check if the player clicks to the correct tiles, the current score increases
-5. Check if the player clickS to the incorrect tiles, it shows a message in red "Wrong! Click button to Start Again" and the current score reset to 0
-6. If I reload the page, check if it keeps the highscore
+5. Check if the player clicks to the incorrect tiles, it shows a message in red "Wrong! Click the button to Start Again" and the current score reset to 0
+6. If I reload the page, check if it keeps the high score
 
 ### Instruction page
-1. Check if the page is responsive in all devices
+1. Check if the page is responsive on all devices
 2. Check if the button "Play now" changes in red color when hover
-3. Check if after clicking the button "Play now", it direct to the page startgame.html with the grid
+3. Check if after clicking the button "Play now", it directs to the page startgame.html with the grid
 
 ### Score page
-1. Check if the page is responsive in all devices
-2. Check if first highest highscore in the score page is the same in the startgame.html page under the grid
+1. Check if the page is responsive on all devices
+2. Check if the first highest high score on the score page is the same in the startgame.html page under the grid
 
 ### Contact page
-1. Check if the page is responsive in all devices
+1. Check if the page is responsive on all devices
 2. Check if the button "Submit" changes in red color when hover
 3. Check if the user doesn´t fill in all the input, it appears a message to fill in the field
 4. After submitting the form, check if there is a confirmation message "Request submitted!"
-5. Check in my personal email if I receive the request from the user
-
+5. Check on my personal email if I receive the request from the user
 
 ## Bugs <a name="bugs"></a>
 * Issue with the footer: it doesn´t stay on the bottom of the page.   
@@ -145,7 +144,7 @@ This solution was found in stack overflow [here](https://stackoverflow.com/quest
 
 * The problem is when reloading the page, the high score will show 0. To display the last high score even after reloading the page, add the function **initiateHighScore** and get the last high score if there is one in the local storage. 
 
-* While the red lights are being showed, the tiles are clickable so it is not good user experience. To disable the tiles to be clickable when it is the turn of the computer, I added the style pointerEvents to "none" in javascript.  
+* While the red lights are being shown, the tiles are clickable so it is not a good user experience. To disable the tiles to be clickable when it is the turn of the computer, I added the style pointerEvents to "none" in javascript. 
 ![pointer event none](https://user-images.githubusercontent.com/76018052/132959353-4f092888-157f-4728-8204-e7af4793e4f7.PNG)  
 
     To make the tiles clickable when it is the player turn, put the pointerEvents to "auto"
@@ -167,3 +166,5 @@ in JS hint. there are several error :
     * The variables "Swal" on email.js are noy defined because it is part of the documentation SweetAlert.
 
 ## Lighthouse testing <a name="lighthouse-testing"></a>  
+
+![lighthouse 1](https://user-images.githubusercontent.com/76018052/133898450-52a2212f-5cff-4ddc-9b16-825cc3f0288a.PNG)

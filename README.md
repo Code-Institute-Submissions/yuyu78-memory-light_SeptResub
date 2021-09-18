@@ -29,7 +29,7 @@ e.[Surface plane](#surface-plane)
 The goal of this memory game is to repeat and click the sequence of light that the game will generate. After each round, one more light will be added to the sequence so it will become progressively longer and more complex which makes it harder to remember, the objective is to succeed the maximum of sequences as the user can.
 
 #### The game is building for: 
-* players for all age, for the kids, teenager, adult, senior 
+* players for all ages, for the kids, teenager, adult, senior 
 * players who want to improve their memory skills 
 * to develop concentration skills
 * Ideal for playing during free time, while waiting for the bus, during the break...
@@ -54,10 +54,9 @@ The goal of this memory game is to repeat and click the sequence of light that t
 * Motivate the user to play again 
 * Help the player to develop the memory skills
 
-
 **Need**:
 * Implement Javascript to set up the rule 
-* Make simple and good visual to make the interaction easy
+* Make simple and good visuals to make the interaction easy
 
 #### User Stories
 
@@ -69,11 +68,10 @@ The goal of this memory game is to repeat and click the sequence of light that t
 * I want to play the game with good interaction so there is no slowness and the page will load quickly
 
 ##### As a  returning player: 
-* I want the game become mmore difficult so I can improve my memory skills
+* I want the game to become more difficult so I can improve my memory skills
 * I want to save my high score on a stats board so I can check my progress
 * I want to select a different grid so I can develop my memory skills
-* I want to contact the business so I can ask question or give feedback
-
+* I want to contact the business so I can ask a question or give feedback
 
 ### Scope plane <a name="scope-plane"></a>
 
@@ -82,33 +80,29 @@ The goal of this memory game is to repeat and click the sequence of light that t
 ##### Existing features
 * A navigation bar in all the pages with **Play, Instruction, score, contact**.  
 On the mobile device, the hamburger menu will be used with the toggling behavior. 
-On the right of the navbar, the icon sound will allow to turn on or off the sound.
 * The footer will be displayed on all the pages with the copyright, the icon GitHub which will direct to the Github page of the project, and the social media link.
-* Each time the user succeeds in the sequence, one light will be added to the next sequence to make the game more complex and difficult to memorize. 
+* Each time the user succeeds a turn, one light will be added to the next sequence to make the game more complex and difficult to memorize. 
 * In the instruction page, it explains all the information about the game and the user can click on the play button.
 * On the contact page, the user can submit a form for any questions, feedback, or suggestion.
 
 ##### Features Left to Implement  
 Due to the lack of time, there are many features I couldn't implement. 
 * For the moment, the game is a grid 3 X 3. Add different levels with a different grid to vary the difficulty:  2 X 2 and  4 X 4. 
-* Add javascript in the contact form.
-* Add stats board displaying the three highest score of the player
 * Add option to use the timer so it will increase the difficulty of the game
 * Add sounds effects
 
-
 ### Structure plane <a name="structure-plane"></a>
 
-* When the player will open the game, it will show the logo and underneath, two buttons: 
+* When the player opens the game, it will show the logo and underneath, two buttons: 
     * The button play to direct to the game 
     * The button instruction will direct to the instruction page to understand the rule.
 
-* If the player failed, it will show the current score and the high score.  
+* If the player loses the game, it will show the current score and the high score.  
 The player has the option to play again by clicking the button "Let's start".
 
 * On the score page, it will show the three highest scores of the player. 
 
-* The instruction page provides all the information about the game, the rules. The player has an option to click below the instruction the button to start the game after reading the instruction.
+* The instruction page provides all the information about the game, the rules. The player can click the button "Play now" to start the game after reading the instruction.
 
 * On the contact page, the player has to fill out the name, email address, and the message to add any question, suggestion, or feedback.
 
@@ -128,19 +122,18 @@ The player has the option to play again by clicking the button "Let's start".
 
 [Contact](https://github.com/yuyu78/memory-light/blob/master/wireframe/contact.pdf)  
 
-
 ### Surface plane <a name="surface-plane"></a>
 
 #### Color Scheme
-The main colors of the website are: 
+The mains colors of the website are: 
 * Black for the background and font color
 * White for the button color and font color 
-* Red when hovering the button, social media icon, menu, name of the game on top-left and the color of the light sequence during the game
+* Red when hovering the button, social media icon, menu, name of the game on top-left, and the color of the light sequence during the game
 
 Those colors are chosen to make a contrast between colors and make the game more visible, easier to play. 
 
 #### Typography 
-* **Play** in all the pages. The reason for this font family is the form of this typography is straight and ideal for a game app.
+* **Play** on all the pages. The choice of this font family is the form of this typography is straight and ideal for a game app.
 
 ## Technologies Used <a name="technologies-used"></a>
 
@@ -178,12 +171,12 @@ Gitpod was used to develop the project and deployed through Github Pages.
 
 The steps for the deployment of the project:
 
-1. Login to [Github](https://github.com/)  
+1. Log in to [Github](https://github.com/)  
 2. Click on the green and white icon on top-right and select "Your repositories"  
 3. From the list of the repositories, select **memory-light**  
 4. Click on **Settings**  on the right of the menu items  
 5. Scroll down to the **GitHub Pages**  
-6. On the **GitHub Pages** section, it will show a message "settings now has its own dedicated tab! Check it out here!", click on "Check it out here!" which will direct to the github pages
+6. On the **GitHub Pages** section, it will show a message "settings now has its own dedicated tab! Check it out here!", click on "Check it out here!" which will direct to the Github pages
 7. Under source in the dropdown menu, select **Master**
 8. On the right, select the folder **/(root)**  
 9. Click **Save** and it will appear a message "Your site is published at https://yuyu78.github.io/memory-light/"
@@ -203,11 +196,11 @@ The steps for the deployment of the project:
 
 ### Code
 
-* For the contact form with the email js, it is inpired from the Code institute course  under ***Interactive Frontend Developement > Putting it all together > Sending Emails Using EmailJS***
+* For the contact form with the email js, it is inspired from the Code institute course under ***Interactive Frontend Development > Putting it all together > Sending Emails Using EmailJS***
 * For the alert message after submitting the form, I used [Sweetalert2](https://sweetalert2.github.io/)
 
 ### Acknowledgment
 
 * Thank you to my mentor Miguel for all the support and advice for my project
-* All the tutor of Code Institute
+* All the tutors of Code Institute
 * Code Institute Slack community
