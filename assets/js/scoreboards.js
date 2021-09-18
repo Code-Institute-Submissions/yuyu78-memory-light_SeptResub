@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 // Display the three highest score in the page score.html
 window.onload = getThreeHighScores;
 function getThreeHighScores() {

@@ -1,3 +1,4 @@
+// Contact form with emailJs
 function sendMail(contactForm) {
     emailjs.send("service_8lzwnfj", "memory_light5", {
         "from_name": contactForm.name.value,
@@ -6,10 +7,12 @@ function sendMail(contactForm) {
     })
     .then(
         function(response) {
-            Swal.fire('Request submitted!')
+            // Sweet Alert
+            Swal.fire('Request submitted!');
         },
         function(error) {
-            Swal.fire('Oops, something went wrong...')
+            // Sweet Alert
+            Swal.fire('Oops, something went wrong...');
         }
     );
     return false;
